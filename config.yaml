@@ -83,11 +83,11 @@ menu:
     #   url: /about/
     #   weight: 1
     - name: CV
-      title: CV
-      url: /"CV_Aman_Ojas_Desai.pdf"/
+      title: Blog
+      url: /blog/
       weight: 1
     - name: Teaching
-      title: Teaching
+      title: Project Portfolio
       url: /project/
       weight: 2
     # - name: Talks
