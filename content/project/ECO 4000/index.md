@@ -22,7 +22,7 @@ links:
 subtitle: An R Package
 tags:
 - hugo-site
-title: Bakeoff
+title: ECO 4000 Statistical Analysis for Economics and Finance
 ---
 
 ![Formspree Logo](formspree-logo.png)

@@ -14,7 +14,7 @@ subtitle: A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical partic
   always moves faster than light.
 tags:
 - hugo-site
-title: Tachyons for Style
+title: ECO 1110 Current Economic Problems
 ---
 
 ![Tachyons Logo Script](tachyons-logo-script.png)
