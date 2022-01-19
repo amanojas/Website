@@ -48,19 +48,19 @@ params:
   social:
     - icon: github
       icon_pack: fab
-      url: https://github.com/hugo-apero/apero
-    - icon: facebook-square
+      url: https://github.com/amanojas
+    - icon: linkedin
       icon_pack: fab
-      url: https://www.facebook.com/hashtag/ap%C3%A9ro
-    - icon: instagram
-      icon_pack: fab
-      url: https://www.instagram.com/explore/tags/apero/
-    - icon: twitter
-      icon_pack: fab
-      url: https://twitter.com/hashtag/apéro
-    - icon: rss
-      icon_pack: fas
-      url: /blog/index.xml
+      url:  www.linkedin.com/in/amanodesai
+    # - icon: instagram
+    #   icon_pack: fab
+    #   url: https://www.instagram.com/explore/tags/apero/
+    # - icon: twitter
+    #   icon_pack: fab
+    #   url: https://twitter.com/hashtag/apéro
+    # - icon: rss
+    #   icon_pack: fas
+    #   url: /blog/index.xml
   socialInFooter: yes
   socialInHeader: no
   textFontFamily: sans-serif
@@ -90,18 +90,18 @@ menu:
       title: Project Portfolio
       url: /project/
       weight: 2
-    # - name: Talks
-    #   title: Talks
-    #   url: /talk/
-    #   weight: 4
-    # - name: A collection
-    #   title: A collection
-    #   url: /collection/
-    #   weight: 5
-    # - name: Elements
-    #   title: Element Page
-    #   url: /elements/
-    #   weight: 6
+    - name: Talks
+      title: Talks
+      url: /talk/
+      weight: 4
+    - name: A collection
+      title: A collection
+      url: /collection/
+      weight: 5
+    - name: Elements
+      title: Element Page
+      url: /elements/
+      weight: 6
 privacy:
   disqus:
     disable: no
