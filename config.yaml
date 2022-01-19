@@ -7,7 +7,7 @@ copyright: ''
 googleAnalytics: ''
 disqusShortname: ''
 metaDataFormat: yaml
-footnoteReturnLinkContents: '&#8617;'
+# footnoteReturnLinkContents: '&#8617;'
 paginate: 5
 preserveTaxonomyNames: yes
 ignoreFiles:
