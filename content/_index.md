@@ -7,7 +7,7 @@ description: I am a doctoral student in the Department of Economics at the Gradu
 image_left: true
 images:
 - img/isola.jpg
-# show_action_link: true
+show_action_link: true
 show_social_links: true
 subtitle:
 text_align_left: true
