@@ -1,5 +1,5 @@
 ---
-author: The R Markdown Team @RStudio
+author: 
 cascade:
   show_author_byline: true
   show_comments: false
@@ -8,8 +8,8 @@ cascade:
     show_sidebar_adunit: true
     text_link_label: View all projects
     text_link_url: /project/
-description: Give your projects a place to live online.
-layout: list-grid
+description: 
+layout: 
 show_author_byline: true
 show_post_date: false
 show_post_thumbnail: true
