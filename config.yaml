@@ -78,30 +78,30 @@ taxonomies:
   tag: tags
 menu:
   header:
-    - name: About
-      title: About Apéro
-      url: /about/
+    # - name: About
+    #   title: About Apéro
+    #   url: /about/
+    #   weight: 1
+    - name: CV
+      title: CV
+      url: /"CV_Aman_Ojas_Desai.pdf"/
       weight: 1
-    - name: Blog
-      title: Blog
-      url: /blog/
-      weight: 2
-    - name: Projects
-      title: Project Portfolio
+    - name: Teaching
+      title: Teaching
       url: /project/
-      weight: 3
-    - name: Talks
-      title: Talks
-      url: /talk/
-      weight: 4
-    - name: A collection
-      title: A collection
-      url: /collection/
-      weight: 5
-    - name: Elements
-      title: Element Page
-      url: /elements/
-      weight: 6
+      weight: 2
+    # - name: Talks
+    #   title: Talks
+    #   url: /talk/
+    #   weight: 4
+    # - name: A collection
+    #   title: A collection
+    #   url: /collection/
+    #   weight: 5
+    # - name: Elements
+    #   title: Element Page
+    #   url: /elements/
+    #   weight: 6
 privacy:
   disqus:
     disable: no
