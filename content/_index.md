@@ -10,7 +10,7 @@ show_action_link: true
 show_social_links: true
 subtitle: A Hugo theme you'll want to hang out with
 text_align_left: true
-title: Hugo Apéro
+title: Aman Desai
 type: home
 ---
 
