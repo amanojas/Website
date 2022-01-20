@@ -1,30 +1,33 @@
 ---
-author: Eric Anderson
-categories:
-- Theme Features
-- R
-- package
-date: "2019-07-01"
-draft: false
-excerpt: This theme has a form-to-email feature built in, thanks to the simple Formspree
-  integration. All you need to activate the form is a valid recipient email address
-  saved in the form front matter.
-layout: single
+# author: Eric Anderson
+# categories:
+# - Theme Features
+# - R
+# - package
+# date: "2019-07-01"
+# draft: true
+excerpt: The course introduces econometric techniques useful to conduct empirical analysis in economics and finance. The purpose of the course is to enable the student to master the concepts and be able to complete an independent empirical project. 
+layout: 
 links:
-- icon: door-open
+- icon: 
   icon_pack: fas
-  name: website
+  name: Course Syllabus
   url: https://bakeoff.netlify.com/
-- icon: github
+- icon: 
   icon_pack: fab
-  name: code
+  name: Course Material
   url: https://github.com/apreshill/bakeoff
-subtitle: An R Package
-tags:
-- hugo-site
+- icon: 
+  icon_pack: fab
+  name: Examples
+  url: https://github.com/apreshill/bakeoff  
+subtitle: Spring 2022
+# tags:
+# - hugo-site
 title: ECO 4000 Statistical Analysis for Economics and Finance
 ---
 
+<!--
 ![Formspree Logo](formspree-logo.png)
 
 ## [Formspree](https://formspree.io) makes it easy to receive submissions from HTML forms on your static website.
@@ -63,4 +66,4 @@ layout: split-right
 
 Both layouts display the page title and description opposite the form, and you
 can also choose to show your social icon links if you have those configured in
-the `config.toml` file.
+the `config.toml` file.-->

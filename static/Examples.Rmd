@@ -1,0 +1,33 @@
+---
+title: "Examples"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    highlight: kate
+---
+
+```{r setup, include=FALSE}
+## Global options
+knitr::opts_chunk$set(cache = TRUE)
+```
+
+## Exploratory Data Analysis
+
+```{r libraries, error=FALSE, message=FALSE, warning=FALSE}
+pack = install.packages(c("tidyverse","AER","pacman"))
+lapply(pack, library, character.only = TRUE)
+```
+
+```{r Data,error=FALSE, message=FALSE, warning=FALSE}
+AER::
+```
+
+### Plot the Data
+
+
+### Moments of the Data
+
+
+## Regression Analysis
+
+
