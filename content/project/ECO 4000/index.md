@@ -12,7 +12,7 @@ links:
 - icon: 
   icon_pack: fas
   name: Course Syllabus
-  url: https://bakeoff.netlify.com/
+  url: "/course syllabus/ECO_4000_Spring_2022.html"
 - icon: 
   icon_pack: fab
   name: Course Material
