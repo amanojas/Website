@@ -5,19 +5,29 @@
 # - R
 # - package
 # date: "2019-07-03"
-draft: false
-excerpt: Building this static site generator theme was the first time I used an Atomic
-  (or Functional) CSS system like Tachyons. It’s a design system that provides very
-  small (which means fast) CSS modules that you can use in your HTML.
+# draft: false
+excerpt: This course examines the historic and political backgrounds of economic thought, the concepts and tools of micro-economics, the measurements and policies of macro-economics, their limitations, and the evolution of current economic discourses. This course will view issues and methodologies through the lens of American economic development, and selected world economic experience. Students will be expected to present and discuss readings and cases concerning assigned texts and materials.
 layout: single
-subtitle: A tachyon /ˈtæki.ɒn/ or tachyonic particle is a hypothetical particle that
-  always moves faster than light.
+subtitle: Spring 2022  
 tags:
 - hugo-site
 title: ECO 1110 Current Economic Problems
+links:
+- icon: 
+  icon_pack: fas
+  name: Course Syllabus
+  url: "/course syllabus/ECO_1110_Spring_2022.html"
+- icon: 
+  icon_pack: fab
+  name: Slides
+  url: "/Slides_1110/Slides_All.html"
+- icon: 
+  icon_pack: fab
+  name: Examples
+  url: https://github.com/apreshill/bakeoff  
 ---
 
-![Tachyons Logo Script](tachyons-logo-script.png)
+<!--![Tachyons Logo Script](tachyons-logo-script.png)
 
 ## [Tachyons](http://tachyons.io) is a design system that allows you to design gorgeous interfaces in the browser with little effort.
 
@@ -125,3 +135,4 @@ $buttonBgColorCustom: #103742;
 $buttonHoverBgColorCustom: #c4001a;
 $borderColorCustom: #c4beb9;
 ```
+-->

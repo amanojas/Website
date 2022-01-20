@@ -1,0 +1,166 @@
+---
+title: "ECO 1110 Current Economic Problems"
+subtitle: "Spring 2022"
+date: "2022-01-20"
+output: 
+  html_document: 
+    toc: yes
+    toc_float: yes
+    theme: flatly
+    keep_md: yes
+---
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+</style>
+
+
+
+## Instructor Information 
+**Name** : Aman Ojas Desai\
+**Email** : adesai@gradcenter.cuny.edu\
+**Class Schedule** : MoWe 2:30 PM – 3:45 PM  (In-Person)\
+**Office Hours**: MoWe 1:00 PM - 2:00 PM\
+
+## Learning Outcomes
+
+The objective of the course is to provide students enough economic background so that they will be able to 
+
+- master the basic terminology of the field and explain the fundamental concepts.
+
+-	use the tools learnt in the class to analyze the economic phenomenon. 
+
+-	form their own opinions about the critical issues that American economy faces today.
+
+-	being up to date with recent economic development by consulting the economics and financial press on a regular basis
+
+-	understand the market mechanism with agents such as consumers, producers, and the government.
+
+-	obtain basic knowledge of market system and role of the government in the welfare of the economic agents.
+
+## Course Materials
+
+I will upload the slides and practice problems on Blackboard. The slides and the material I provide are going to be sufficient for the course. You do not need to buy the book.
+
+**Recommended Book**
+
+- [Principles of Macroeconomics, N. Gregory Mankiw, 8th Edition](https://www.amazon.com/Principles-Macroeconomics-N-Gregory-Mankiw/dp/1305971507) (previous editions are also fine)
+
+
+## Important Dates
+
+(For the latest updates please follow: https://www.baruch.cuny.edu/registrar/registration/academic-calendar.html)
+
+**No Classes on Following Days**\
+September – 6th,8th,15th\
+October – 11th\
+December – 15th, 20th\
+Final Submission Date (Book Report or Essay) – 20th December
+
+## Course Structure and Grading
+
+- There will be four quizzes throughout the semester. The quizzes will be held as per the schedule provided below. 
+
+-	I will also ask for your opinions on articles from the three news outlets that are mentioned in the resources section. This will help you cultivate the habit of forming your opinions using the tools you will learn in the class. The articles and due dates to submit your opinions will be announced on the Blackboard as the semester progresses.
+
+-	There is no final exam. Instead, you will be required to draft a book review or an essay on any topic you please from a given set of topics at my discretion. The topics are given in separate PDF documents.
+
+
+Schedule for Quizzes
+Quiz	Topics/Slides	Points	Date
+Quiz 1	Topics 1,2	20	    22nd September
+Quiz 2	Topics 3,4,5	20	27th October
+Quiz 3	Topics 6,7	20	  17th November
+Quiz 4	Topics 8,9	20	  13th December
+
+
+All the quizzes will be available on Blackboard during the class time. i.e., the quiz will be made available at 9:05 AM and will disappear at 10:20 AM. If you miss the quiz for any reason, you will get zero points. Please feel free to reach out to me in advance if you cannot take the quiz on the scheduled day due to personal emergencies. You must make me aware of the situation in advance.
+
+Course Evaluation will be as follows:
+Quizzes			40%
+Essay or Book Review		40%
+Opinions                                 20%
+
+Grading System
+
+Letter Grade	GPA	Grade (Over 100)
+A	4.0	93.0-100.0
+A-	3.7	90.0-92.9
+B+	3.3	87.1-89.9
+B	3.0	83.0-87.0
+B-	2.7	80.0-82.9
+C+	2.3	77.1-79.9
+C	2.0	73.0-77.0
+C-	1.7	70.0-72.9
+D+	1.3	67.1-69.9
+D	1.0	60.0-67.0
+F	0.0	below 60.0
+
+
+
+## Resources for Students
+
+- The CORE team has developed a resource covering wide ranging topics for introductory economics and role of the field in recent policy issues. Students can access a free online textbook titled [The Economy: Economics for a changing world](https://www.core-econ.org/the-economy/book/text/0-3-contents.html). I strongly recommend this useful resource to know more about economic principles and how you can use them to have an informed opinion on relevant policy issues.
+
+- Students at Baruch college may sign up for free subscriptions to The Wall Street Journal, The New York Time, and The Financial Times. See the links below and sign up if you have not yet
+
+    + [The Wall Street Journal](https://guides.newman.baruch.cuny.edu/wallstreetjournal)
+    
+    + [The New York Times](https://guides.newman.baruch.cuny.edu/newyorktimes)
+    
+    + [The Financial Times](https://www.ft.com/join/licence/5d27ac4e-cb0c-47f0-89e3-9bb20bf4c867/details)
+
+- I will always be available via email. So, I do encourage all the students to reach out to me if they feel stuck somewhere or have any issues or doubts regarding the course material or otherwise.
+
+## Policy Regarding Make-up Exams and Deadline Extensions
+
+Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be Make-ups for exams except only if: 
+
+-	The student has contacted the instructor before the exam and the instructor has agreed to organize a make-up exam (interviews or business trips do not constitute a valid excuse to have a makeup).\
+-	There is a case of documented serious illness, civic obligation, accident. 
+
+## Counselling Service
+
+At Baruch, we acknowledge that as a student, you are balancing many demands. During the semester, if you start to experience personal difficulties or stressors that are interfering with your academic performance or day to day functioning, please consider seeking free and confidential support at the Baruch College Counseling Center. For more information or to make an appointment, please visit their website at https://studentaffairs.baruch.cuny.edu/counseling/ or call 646-312-2155. If it's outside of business hours (Monday-Friday 9-5pm) and you need immediate assistance, please call 1-888-NYC-WELL (888-692-9355). If you are concerned about one of your classmates, please share that concern by filling out a Campus Intervention Team form at  https://studentaffairs.baruch.cuny.edu/campus-intervention-team.
+
+## Student Disabilities Service
+
+We have a process at Baruch for determining whether a student who identifies as disabled is eligible for reasonable accommodations in order to complete the student’s academic program. We strive to ensure that no student with a disability is discriminated against and that none is denied participation in college programs and activities for lack of reasonable accommodations. 
+Some people think that a disability has to be visible to be accommodated. This is not the case. There are many disabilities – diabetes, psychological illness, learning disabilities, AIDS, seizure disorders, arthritis, etc., – that require accommodations. 
+Examples of accommodations include additional testing time; adaptive equipment; and taping of classes. If you feel that you may need a reasonable accommodation based on a disability, please contact the staff at the Office of Disability Services, Newman Vertical Campus, Room 2-271, or by phone at (646) 312-4590.
+
+## Academic Integrity 
+
+I fully support Baruch College's policy on Academic, which states, in part: 
+"Academic dishonesty is unacceptable and will not be tolerated. Cheating, forgery, plagiarism, and collusion in dishonest acts undermine the college's educational mission and the students' personal and intellectual growth. Baruch students are expected to bear individual responsibility for their work, to learn the rules and definitions that underlie the practice of academic integrity, and to uphold its ideals. Ignorance of the rules is not an acceptable excuse for disobeying them. Any student who attempts to compromise or devalue the academic process will be sanctioned." Additional information can be found at http://www.baruch.cuny.edu/academic/academic_honesty.html
+
+Students caught cheating will first receive a PEN grade and a report of suspected academic dishonesty will be sent to the Office of the Dean of Students. That grade will then be changed to an F grade (on top of the penalty decided by the Office of the Dean of Students).  
+
+## Tentative Schedule (subject to change)
+
+**Part 1**
+
+1. Introduction
+
+2. Basic Concepts of Trade
+
+**Part 2**
+
+3. Introduction to Competitive Markets (Supply and Demand)
+
+4. Elasticity
+
+5. Government Policies in Competitive Markets
+
+**Part 3**
+
+6. National Income Accounting
+
+7. Cost of Living 
+
+**Part 4**
+
+8. Unemployment
+
+9. Money, Federal Reserve and Monetary Policy

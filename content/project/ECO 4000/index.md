@@ -4,7 +4,7 @@
 # - Theme Features
 # - R
 # - package
-# date: "2019-07-01"
+date: "01/20/2022"
 # draft: true
 excerpt: The course introduces econometric techniques useful to conduct empirical analysis in economics and finance. The purpose of the course is to enable the student to master the concepts and be able to complete an independent empirical project. 
 layout: 
@@ -16,7 +16,7 @@ links:
 - icon: 
   icon_pack: fab
   name: Course Material
-  url: https://github.com/apreshill/bakeoff
+  url: 
 - icon: 
   icon_pack: fab
   name: Examples

@@ -3,9 +3,9 @@ author:
 cascade:
   show_author_byline: true
   show_comments: false
-  show_post_date: true
+  show_post_date: false
   sidebar:
-    show_sidebar_adunit: true
+    show_sidebar_adunit: false
     text_link_label: View all projects
     text_link_url: /project/
 description: 
