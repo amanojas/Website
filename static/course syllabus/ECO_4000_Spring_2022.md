@@ -51,11 +51,19 @@ By the end of the semester students will be able to:
 Course material will be posted on the blackboard and will consist of lecture notes, problem sets, and datasets. The course will be self-sufficient. You will not have to buy a textbook. Econometrics is a major component of research in economics and finance. There are many textbooks and supplementary material to be found on the internet including video tutorials, practice problems, and handouts. Students having doubts about the adequacy of a specific source should discuss with the instructor. Students who wish to acquire a textbook should preferably consider one of the following textbooks.\
 
 **Recommended Books**\
-- [Introduction to Econometrics with R](https://www.econometrics-with-r.org/) - Open Access\
+
 - [Introduction to Econometrics, 4th Edition (Pearson), by James Stock and Mark Watson. (SW)](https://www.pearson.com/us/higher-education/program/Stock-Introduction-to-Econometrics-Plus-My-Lab-Economics-with-Pearson-e-Text-Access-Card-Package-4th-Edition/PGM2416966.html)\
 - [Introductory Econometrics: A Modern Approach, 6th Edition (Cengage), by Jeffery M. Wooldridge (W)](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/9781305270107/)\
 - [Basic Econometrics, 5th Edition, by Damodar N Gujarati and Dawn C. Porter (GP)](https://www.amazon.com/Basic-Econometrics-Damodar-N-Gujarati/dp/0073375772)\
 - [Introduction to Econometrics, 5th Edition (Oxford University Press), by Christopher Dougherty (CD)](https://www.amazon.com/Introduction-Econometrics-Christopher-Dougherty/dp/0199676828)\
+
+**Open Access**
+
+- [Introduction to Econometrics with R](https://www.econometrics-with-r.org/) 
+
+- [Intermediate Statistics with R] - (https://open.umn.edu/opentextbooks/textbooks/intermediate-statistics-with-r)
+
+- [Introductory Statistics] - (https://openstax.org/details/introductory-statistics)
 
 ## Important Dates 
 (For the latest updates please follow: https://www.baruch.cuny.edu/registrar/registration/academic-calendar.html) \
