@@ -61,9 +61,9 @@ Course material will be posted on the blackboard and will consist of lecture not
 
 - [Introduction to Econometrics with R](https://www.econometrics-with-r.org/) 
 
-- [Intermediate Statistics with R] - (https://open.umn.edu/opentextbooks/textbooks/intermediate-statistics-with-r)
+- [Intermediate Statistics with R](https://open.umn.edu/opentextbooks/textbooks/intermediate-statistics-with-r)
 
-- [Introductory Statistics] - (https://openstax.org/details/introductory-statistics)
+- [Introductory Statistics](https://openstax.org/details/introductory-statistics)
 
 ## Important Dates 
 (For the latest updates please follow: https://www.baruch.cuny.edu/registrar/registration/academic-calendar.html) \
