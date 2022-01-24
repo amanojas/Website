@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
 subtitle: "Spring 2022"
-date: "2022-01-20"
+date: "2022-01-24"
 output: 
   html_document: 
     toc: yes
@@ -75,6 +75,20 @@ Assignments, midterm, and final exams will all be graded over 100 (0 is the wors
 
 Grading System
 
+
+|LetterGrades |ScoreRange |
+|:------------|:----------|
+|A            |93-100     |
+|A-           |90-92.9    |
+|B+           |87.1-89.9  |
+|B            |83-87      |
+|B-           |80-82.9    |
+|C+           |77.1-79.9  |
+|C            |73-77      |
+|C-           |70-72.9    |
+|D+           |67.1-69.9  |
+|D            |60-67      |
+|F            |below 60   |
 Letter Grade	GPA	Grade (Over 100)
 A	4.0	93.0-100.0
 A-	3.7	90.0-92.9
