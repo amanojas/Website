@@ -79,30 +79,20 @@ Grading System
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
+library(kableExtra)
 library(tidyverse)
-scheme = tibble("Letter Grade" = c("F","D","D+","C-","C","C+","B-","B","B+","A-","A"), 
+scheme = tibble("Letter" = c("F","D","D+","C-","C","C+","B-","B","B+","A-","A"), 
                 "Grade (over 100)" = c("below 60","60-67","67.1-69.9","70-72.9","73-77","77.1-79.9","80-82.9","83-87",
                                "87.1-89.9","90-92.9","93-100"))
 scheme_1 = map_df(scheme,rev)
-kable(scheme_1, format = "html")
+scheme_1%>%
+  kbl()%>%
+  kableExtra::kable_styling()
 ```
-Letter Grade	GPA	Grade (Over 100)
-A	4.0	93.0-100.0
-A-	3.7	90.0-92.9
-B+	3.3	87.1-89.9
-B	3.0	83.0-87.0
-B-	2.7	80.0-82.9
-C+	2.3	77.1-79.9
-C	2.0	73.0-77.0
-C-	1.7	70.0-72.9
-D+	1.3	67.1-69.9
-D	1.0	60.0-67.0
-F	0.0	below 60.0
-
 
 ## Required Software
 
-The assignments throughout the semester may include the problems that involve coding in R. The primary software for the class will be R as it is open source and available for free to all. You will find the following links helpful. 
+The assignments throughout the semester will involve some problems that require coding. The primary software for the class will be R as it is open source and available for free to all. 
 
 Install R - https://cran.r-project.org/
 Install R studio - https://www.rstudio.com/products/rstudio/download/
@@ -110,7 +100,7 @@ Install R studio - https://www.rstudio.com/products/rstudio/download/
 More information on this will be provided in class.
 
 ## Policy Regarding Make-up Exams and Deadline Extensions
-Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be Make-ups for exams except only if: 
+Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be no make-ups for exams except only if: 
 
 -	The student has contacted the instructor before the exam and the instructor has agreed to organize a make-up exam (interviews or business trips do not constitute a valid excuse to have a makeup).\
 -	There is a case of documented serious illness, civic obligation, accident. \
@@ -122,6 +112,7 @@ Solutions to assignments will be available immediately after the deadline. So, n
 Attendance will not be checked. It is the students’ responsibility to attend classes. Sometimes, some information that is relevant for the midterm and the final exam will be given during the class (information that will not be found on lecture notes, books, or other supports). 
 
 ## Counselling Service
+
 At Baruch, we acknowledge that as a student, you are balancing many demands. During the semester, if you start to experience personal difficulties or stressors that are interfering with your academic performance or day to day functioning, please consider seeking free and confidential support at the Baruch College Counseling Center. For more information or to make an appointment, please visit their website at https://studentaffairs.baruch.cuny.edu/counseling/ or call 646-312-2155. If it's outside of business hours (Monday-Friday 9-5pm) and you need immediate assistance, please call 1-888-NYC-WELL (888-692-9355). If you are concerned about one of your classmates, please share that concern by filling out a Campus Intervention Team form at  https://studentaffairs.baruch.cuny.edu/campus-intervention-team.
 
 ## Student Disabilities Service
@@ -175,7 +166,7 @@ Students caught cheating will first receive a PEN grade and a report of suspecte
 4.3.2.	Omitted variable bias
 4.4.	Variance of the OLS estimators
 4.4.1.	Components of the OLS variances, multicollinearity
-4.4.2.	Mis specified models
+4.4.2.	Misspecified models
 4.5.	Efficiency of OLS
 4.6.	Testing multiple linear restrictions; the F - test
 
