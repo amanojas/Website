@@ -75,20 +75,60 @@ Assignments, midterm, and final exams will all be graded over 100 (0 is the wors
 
 Grading System
 
-
-|LetterGrades |ScoreRange |
-|:------------|:----------|
-|A            |93-100     |
-|A-           |90-92.9    |
-|B+           |87.1-89.9  |
-|B            |83-87      |
-|B-           |80-82.9    |
-|C+           |77.1-79.9  |
-|C            |73-77      |
-|C-           |70-72.9    |
-|D+           |67.1-69.9  |
-|D            |60-67      |
-|F            |below 60   |
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Letter Grade </th>
+   <th style="text-align:left;"> Grade (over 100) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> 93-100 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A- </td>
+   <td style="text-align:left;"> 90-92.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B+ </td>
+   <td style="text-align:left;"> 87.1-89.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> 83-87 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B- </td>
+   <td style="text-align:left;"> 80-82.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C+ </td>
+   <td style="text-align:left;"> 77.1-79.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> 73-77 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C- </td>
+   <td style="text-align:left;"> 70-72.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> D+ </td>
+   <td style="text-align:left;"> 67.1-69.9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> 60-67 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> below 60 </td>
+  </tr>
+</tbody>
+</table>
 Letter Grade	GPA	Grade (Over 100)
 A	4.0	93.0-100.0
 A-	3.7	90.0-92.9

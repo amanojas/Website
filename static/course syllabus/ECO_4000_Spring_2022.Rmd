@@ -80,11 +80,11 @@ Grading System
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
 library(tidyverse)
-scheme = tibble(LetterGrades = c("F","D","D+","C-","C","C+","B-","B","B+","A-","A"), 
-                ScoreRange = c("below 60","60-67","67.1-69.9","70-72.9","73-77","77.1-79.9","80-82.9","83-87",
+scheme = tibble("Letter Grade" = c("F","D","D+","C-","C","C+","B-","B","B+","A-","A"), 
+                "Grade (over 100)" = c("below 60","60-67","67.1-69.9","70-72.9","73-77","77.1-79.9","80-82.9","83-87",
                                "87.1-89.9","90-92.9","93-100"))
 scheme_1 = map_df(scheme,rev)
-kable(scheme_1)
+kable(scheme_1, format = "html")
 ```
 Letter Grade	GPA	Grade (Over 100)
 A	4.0	93.0-100.0
