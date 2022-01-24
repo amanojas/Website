@@ -21,7 +21,7 @@ output:
 **Name** : Aman Ojas Desai\
 **Email** : adesai@gradcenter.cuny.edu\
 **Class Schedule** : MoWe 2:30 PM – 3:45 PM  (In-Person)\
-**Room** - B - Vert 3-120\
+**Room** : - B - Vert 3-120\
 **Office Hours**: MoWe 1:00 PM - 2:00 PM\
 
 ## Learning Outcomes
