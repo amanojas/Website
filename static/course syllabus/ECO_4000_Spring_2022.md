@@ -134,7 +134,8 @@ Grading System
 
 The assignments throughout the semester will involve some problems that require coding. The primary software for the class will be R as it is open source and available for free to all. 
 
-Install R - https://cran.r-project.org/
+Install R - https://cran.r-project.org/ 
+
 Install R studio - https://www.rstudio.com/products/rstudio/download/
 
 More information on this will be provided in class.
@@ -144,8 +145,6 @@ Students are responsible for checking the exam dates and avoid any conflict with
 
 -	The student has contacted the instructor before the exam and the instructor has agreed to organize a make-up exam (interviews or business trips do not constitute a valid excuse to have a makeup).\
 -	There is a case of documented serious illness, civic obligation, accident. \
-
-Solutions to assignments will be available immediately after the deadline. So, no deadline extension will be provided, under any circumstance. 
 
 ## Attendance and Lateness Policies
 
