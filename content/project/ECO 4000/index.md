@@ -16,7 +16,7 @@ links:
 - icon: 
   icon_pack: fab
   name: Course Topics
-  url: "/Slides 4000/Course_Topics.html"
+  url: "/Slides_4000/Course_Topics.html"
 - icon: 
   icon_pack: fab
   name: Examples
