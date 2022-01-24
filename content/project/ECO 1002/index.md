@@ -7,14 +7,14 @@
 # date: "2019-07-02"
 draft: false
 excerpt: A study of the determinants of aggregate levels of production, employment, and prices. Impact of government spending, taxation, and monetary policy on the level of unemployment and the rate of inflation. Emphasis on the institutional framework within which monetary policy operates. 
-layout: single-sidebar
+layout: 
 links:
 - icon: 
   icon_pack: fas
   name: Fall 2021
   url: "/course syllabus/ECO1002_Fall2021.docx"
-- icon: github
-  icon_pack: fab
+- icon: 
+  icon_pack: fas
   name: Spring 2021
   url: "/course syllabus/ECO1002_Spring2021.docx"
 # - icon: newspaper
