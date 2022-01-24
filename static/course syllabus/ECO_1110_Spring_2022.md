@@ -1,7 +1,7 @@
 ---
 title: "ECO 1110 Current Economic Problems"
 subtitle: "Spring 2022"
-date: "2022-01-20"
+date: "2022-01-24"
 output: 
   html_document: 
     toc: yes
@@ -21,6 +21,7 @@ output:
 **Name** : Aman Ojas Desai\
 **Email** : adesai@gradcenter.cuny.edu\
 **Class Schedule** : MoWe 2:30 PM – 3:45 PM  (In-Person)\
+**Room** - B - Vert 3-120\
 **Office Hours**: MoWe 1:00 PM - 2:00 PM\
 
 ## Learning Outcomes
