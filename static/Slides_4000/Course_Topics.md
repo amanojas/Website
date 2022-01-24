@@ -16,31 +16,87 @@ output:
 </style>
 
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## Review 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+- Probability and Statistics
 
+## The Simple Regression Model
 
-```r
-summary(cars)
-```
+- Definition of the Simple Regression Model
 
-```
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-```
+- Deriving the Ordinary Least Squares Estimates
 
-## Including Plots
+- Properties of OLS
 
-You can also embed plots, for example:
+- Fitted values and residuals
 
-![](Course_Topics_files/figure-html/pressure-1.png)<!-- -->
+- Algebraic properties of OLS statistics
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+- Goodness-of-fit
+
+- Units of Measurement and Functional Form
+
+- Expected Values and Variances of the OLS estimators
+
+## 	Regression Analysis: Inference
+
+- Hypothesis testing
+
+- Sampling Distribution of the OLS estimators
+
+- Testing hypothesis about a single population parameter
+
+- Testing against one-sided alternatives
+
+- Two-sided alternatives
+
+- Computing p-values for t-tests
+
+- Confidence intervals
+
+## 	Multiple Regression Analysis
+
+- Motivation for Multiple Regression
+
+- Mechanics and Interpretation of OLS
+
+- Interpreting the OLS regression equation
+
+- Meaning of “holding other factors fixed''
+
+- Changing more than one independent variable simultaneously
+
+- Partialling out interpretation of multiple regression
+
+- Comparison of simple and multiple regression estimates
+
+- Goodness-of-fit
+
+- Expected values of the OLS estimates
+
+- Including irrelevant variables in a regression model
+
+- Omitted variable bias
+
+- Variance of the OLS estimators
+
+- Components of the OLS variances, multicollinearity
+
+- Misspecified models
+
+- Efficiency of OLS
+
+- Testing multiple linear restrictions; the F - test
+
+##	Multiple Regression Analysis with Qualitative Information
+
+- Binary (or Dummy) Variables
+
+- A single dummy independent variable
+
+- Using dummy variables for multiple categories
+
+- Interactions involving dummy variables
+
+- A binary dependent variable: the linear probability model
