@@ -1,7 +1,7 @@
 ---
 title: "ECO 1110 Current Economic Problems"
 subtitle: "Spring 2022"
-date: "2022-01-24"
+date: "2022-01-26"
 output: 
   html_document: 
     toc: yes
@@ -54,10 +54,9 @@ I will upload the slides and practice problems on Blackboard. The slides and the
 (For the latest updates please follow: https://www.baruch.cuny.edu/registrar/registration/academic-calendar.html)
 
 **No Classes on Following Days**\
-September – 6th,8th,15th\
-October – 11th\
-December – 15th, 20th\
-Final Submission Date (Book Report or Essay) – 20th December
+February- 21st (Monday)\
+April – 15th to 22nd (Spring Recess)\
+Final Submission Date (Book Report or Essay) – To be anounced
 
 ## Course Structure and Grading
 
