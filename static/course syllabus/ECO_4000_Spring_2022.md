@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
 subtitle: "Spring 2022"
-date: "2022-01-24"
+date: "2022-01-28"
 output: 
   html_document: 
     toc: yes
@@ -147,7 +147,9 @@ Install R - https://cran.r-project.org/
 
 Install R studio - https://www.rstudio.com/products/rstudio/download/
 
-More information on this will be provided in class.
+## Datacamp Access for Students
+
+Students will have a free subscription to mostly all the courses on Datacamp under **Datacamp for Classroom**. You will be sent an invite link by the instructor. You are required to sign up using your Baruch email. **Do not use other emails. They will not work.**  
 
 ## Policy Regarding Make-up Exams and Deadline Extensions
 Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be no make-ups for exams except only if: 

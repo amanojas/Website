@@ -1,7 +1,7 @@
 ---
 title: "ECO 1110 Current Economic Problems"
 subtitle: "Spring 2022"
-date: "2022-01-26"
+date: "2022-01-28"
 output: 
   html_document: 
     toc: yes
@@ -56,7 +56,7 @@ I will upload the slides and practice problems on Blackboard. The slides and the
 **No Classes on Following Days**\
 February- 21st (Monday)\
 April – 15th to 22nd (Spring Recess)\
-Final Submission Date (Book Report or Essay) – To be anounced
+Final Submission Date (Book Report or Essay) – To be announced
 
 ## Course Structure and Grading
 
@@ -75,12 +75,12 @@ Quiz 3	Topics 6,7	20	  17th November
 Quiz 4	Topics 8,9	20	  13th December
 
 
-All the quizzes will be available on Blackboard during the class time. i.e., the quiz will be made available at 9:05 AM and will disappear at 10:20 AM. If you miss the quiz for any reason, you will get zero points. Please feel free to reach out to me in advance if you cannot take the quiz on the scheduled day due to personal emergencies. You must make me aware of the situation in advance.
+If you miss the quiz for any reason, you will get zero points. Please feel free to reach out to me in advance if you cannot take the quiz on the scheduled day due to personal emergencies. You must make me aware of the situation in advance.
 
 Course Evaluation will be as follows:
-Quizzes			40%
-Essay or Book Review		40%
-Opinions                                 20%
+Quizzes			60%\
+Essay or Book Review		20%\
+Opinions  20%\
 
 Grading System
 
