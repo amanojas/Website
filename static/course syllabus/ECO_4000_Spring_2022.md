@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
 subtitle: "Spring 2022"
-date: "2022-01-28"
+date: "2022-01-29"
 output: 
   html_document: 
     toc: yes
@@ -82,7 +82,7 @@ Assignments, midterm, and final exams will all be graded over 100 (0 is the wors
 **Final Exam**  - 30%\
 
 
-Grading System
+### Grading System
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
@@ -138,7 +138,6 @@ Grading System
   </tr>
 </tbody>
 </table>
-
 ## Required Software
 
 The assignments throughout the semester will involve some problems that require coding. The primary software for the class will be R as it is open source and available for free to all. 

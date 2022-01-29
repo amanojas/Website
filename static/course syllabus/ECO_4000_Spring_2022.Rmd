@@ -84,7 +84,7 @@ Assignments, midterm, and final exams will all be graded over 100 (0 is the wors
 **Final Exam**  - 30%\
 
 
-Grading System
+### Grading System
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
@@ -98,7 +98,6 @@ scheme_1%>%
   kbl()%>%
   kableExtra::kable_styling()
 ```
-
 ## Required Software
 
 The assignments throughout the semester will involve some problems that require coding. The primary software for the class will be R as it is open source and available for free to all. 
