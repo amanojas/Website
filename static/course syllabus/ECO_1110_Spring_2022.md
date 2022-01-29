@@ -21,7 +21,7 @@ output:
 **Name** : Aman Ojas Desai\
 **Email** : adesai@gradcenter.cuny.edu\
 **Class Schedule** : MoWe 2:30 PM – 3:45 PM  (In-Person)\
-**Room** : - B - Vert 3-120\
+**Room** :  B - Vert 3-120\
 **Office Hours**: MoWe 1:00 PM - 2:00 PM\
 
 ## Learning Outcomes
@@ -70,12 +70,12 @@ Final Submission Date (Book Report or Essay) – To be announced
 ### Schedule for Quizzes
 
 ```{=html}
-<div id="qefbqmtgco" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="obnvlqaicq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#qefbqmtgco .gt_table {
+#obnvlqaicq .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: 0;
@@ -100,7 +100,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-left-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_heading {
+#obnvlqaicq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -112,7 +112,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-right-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_title {
+#obnvlqaicq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -122,7 +122,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-bottom-width: 0;
 }
 
-#qefbqmtgco .gt_subtitle {
+#obnvlqaicq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -132,13 +132,13 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-top-width: 0;
 }
 
-#qefbqmtgco .gt_bottom_border {
+#obnvlqaicq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_col_headings {
+#obnvlqaicq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -153,7 +153,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-right-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_col_heading {
+#obnvlqaicq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -173,7 +173,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   overflow-x: hidden;
 }
 
-#qefbqmtgco .gt_column_spanner_outer {
+#obnvlqaicq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -185,15 +185,15 @@ Final Submission Date (Book Report or Essay) – To be announced
   padding-right: 4px;
 }
 
-#qefbqmtgco .gt_column_spanner_outer:first-child {
+#obnvlqaicq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qefbqmtgco .gt_column_spanner_outer:last-child {
+#obnvlqaicq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qefbqmtgco .gt_column_spanner {
+#obnvlqaicq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -205,7 +205,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   width: 100%;
 }
 
-#qefbqmtgco .gt_group_heading {
+#obnvlqaicq .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -227,7 +227,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   vertical-align: middle;
 }
 
-#qefbqmtgco .gt_empty_group_heading {
+#obnvlqaicq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -242,15 +242,15 @@ Final Submission Date (Book Report or Essay) – To be announced
   vertical-align: middle;
 }
 
-#qefbqmtgco .gt_from_md > :first-child {
+#obnvlqaicq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qefbqmtgco .gt_from_md > :last-child {
+#obnvlqaicq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qefbqmtgco .gt_row {
+#obnvlqaicq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -269,7 +269,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   overflow-x: hidden;
 }
 
-#qefbqmtgco .gt_stub {
+#obnvlqaicq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -281,7 +281,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   padding-left: 12px;
 }
 
-#qefbqmtgco .gt_summary_row {
+#obnvlqaicq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -291,7 +291,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   padding-right: 5px;
 }
 
-#qefbqmtgco .gt_first_summary_row {
+#obnvlqaicq .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -301,7 +301,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-top-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_grand_summary_row {
+#obnvlqaicq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -311,7 +311,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   padding-right: 5px;
 }
 
-#qefbqmtgco .gt_first_grand_summary_row {
+#obnvlqaicq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -321,11 +321,11 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-top-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_striped {
+#obnvlqaicq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qefbqmtgco .gt_table_body {
+#obnvlqaicq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -334,7 +334,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-bottom-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_footnotes {
+#obnvlqaicq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -348,13 +348,13 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-right-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_footnote {
+#obnvlqaicq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#qefbqmtgco .gt_sourcenotes {
+#obnvlqaicq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -368,41 +368,41 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-right-color: #D3D3D3;
 }
 
-#qefbqmtgco .gt_sourcenote {
+#obnvlqaicq .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#qefbqmtgco .gt_left {
+#obnvlqaicq .gt_left {
   text-align: left;
 }
 
-#qefbqmtgco .gt_center {
+#obnvlqaicq .gt_center {
   text-align: center;
 }
 
-#qefbqmtgco .gt_right {
+#obnvlqaicq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qefbqmtgco .gt_font_normal {
+#obnvlqaicq .gt_font_normal {
   font-weight: normal;
 }
 
-#qefbqmtgco .gt_font_bold {
+#obnvlqaicq .gt_font_bold {
   font-weight: bold;
 }
 
-#qefbqmtgco .gt_font_italic {
+#obnvlqaicq .gt_font_italic {
   font-style: italic;
 }
 
-#qefbqmtgco .gt_super {
+#obnvlqaicq .gt_super {
   font-size: 65%;
 }
 
-#qefbqmtgco .gt_footnote_marks {
+#obnvlqaicq .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -412,7 +412,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Quizzes</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Quiz</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Topics</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Points</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Date</th>
@@ -454,60 +454,383 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
 
 ### Grading System
 
-<table class="table" style="margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;"> Letter </th>
-   <th style="text-align:left;"> Grade (over 100) </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> 93-100 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A- </td>
-   <td style="text-align:left;"> 90-92.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> B+ </td>
-   <td style="text-align:left;"> 87.1-89.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> 83-87 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> B- </td>
-   <td style="text-align:left;"> 80-82.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C+ </td>
-   <td style="text-align:left;"> 77.1-79.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> 73-77 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C- </td>
-   <td style="text-align:left;"> 70-72.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D+ </td>
-   <td style="text-align:left;"> 67.1-69.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> 60-67 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> below 60 </td>
-  </tr>
-</tbody>
+
+```{=html}
+<div id="ymnvfqtvtv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#ymnvfqtvtv .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: 0;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ymnvfqtvtv .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ymnvfqtvtv .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ymnvfqtvtv .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ymnvfqtvtv .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ymnvfqtvtv .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ymnvfqtvtv .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ymnvfqtvtv .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ymnvfqtvtv .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ymnvfqtvtv .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ymnvfqtvtv .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ymnvfqtvtv .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ymnvfqtvtv .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#ymnvfqtvtv .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ymnvfqtvtv .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ymnvfqtvtv .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ymnvfqtvtv .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#ymnvfqtvtv .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ymnvfqtvtv .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#ymnvfqtvtv .gt_left {
+  text-align: left;
+}
+
+#ymnvfqtvtv .gt_center {
+  text-align: center;
+}
+
+#ymnvfqtvtv .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ymnvfqtvtv .gt_font_normal {
+  font-weight: normal;
+}
+
+#ymnvfqtvtv .gt_font_bold {
+  font-weight: bold;
+}
+
+#ymnvfqtvtv .gt_font_italic {
+  font-style: italic;
+}
+
+#ymnvfqtvtv .gt_super {
+  font-size: 65%;
+}
+
+#ymnvfqtvtv .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Letter</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Grade (over 100)</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_center">A</td>
+<td class="gt_row gt_center">93-100</td></tr>
+    <tr><td class="gt_row gt_center">A-</td>
+<td class="gt_row gt_center">90-92.9</td></tr>
+    <tr><td class="gt_row gt_center">B+</td>
+<td class="gt_row gt_center">87.1-89.9</td></tr>
+    <tr><td class="gt_row gt_center">B</td>
+<td class="gt_row gt_center">83-87</td></tr>
+    <tr><td class="gt_row gt_center">B-</td>
+<td class="gt_row gt_center">80-82.9</td></tr>
+    <tr><td class="gt_row gt_center">C+</td>
+<td class="gt_row gt_center">77.1-79.9</td></tr>
+    <tr><td class="gt_row gt_center">C</td>
+<td class="gt_row gt_center">73-77</td></tr>
+    <tr><td class="gt_row gt_center">C-</td>
+<td class="gt_row gt_center">70-72.9</td></tr>
+    <tr><td class="gt_row gt_center">D+</td>
+<td class="gt_row gt_center">67.1-69.9</td></tr>
+    <tr><td class="gt_row gt_center">D</td>
+<td class="gt_row gt_center">60-67</td></tr>
+    <tr><td class="gt_row gt_center">F</td>
+<td class="gt_row gt_center">below 60</td></tr>
+  </tbody>
+  
+  
 </table>
+</div>
+```
 
 
 ## Resources for Students
@@ -526,7 +849,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
 
 ## Policy Regarding Make-up Exams and Deadline Extensions
 
-Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be Make-ups for exams except only if: 
+Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be make-up quizzes only if: 
 
 -	The student has contacted the instructor before the exam and the instructor has agreed to organize a make-up exam (interviews or business trips do not constitute a valid excuse to have a makeup).\
 -	There is a case of documented serious illness, civic obligation, accident. 
