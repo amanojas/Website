@@ -52,7 +52,7 @@ By the end of the semester students will be able to:
 
 ## Course Materials
 
-We will use this site as well as the BLackboard for our purposes in this course.. The course will be self-sufficient. You will not have to buy a textbook. Econometrics is a major component of research in economics and finance. There are many textbooks and supplementary material to be found on the internet including video tutorials, practice problems, and handouts. Students having doubts about the adequacy of a specific source should discuss with the instructor. Students who wish to acquire a textbook should preferably consider one of the following textbooks.\
+We will use this site as well as the Blackboard for our purposes in this course. The course will be self-sufficient. You will not have to buy a textbook. Econometrics is a major component of research in economics and finance. There are many textbooks and supplementary material to be found on the internet including video tutorials, practice problems, and handouts. Students having doubts about the adequacy of a specific source should discuss with the instructor. Students who wish to acquire a textbook should preferably consider one of the following textbooks.\
 
 **Recommended Books**\
 
@@ -81,9 +81,9 @@ Final Exam – As per Baruch College’s Schedule
 ### Course Evaluation Scheme
 
 **DataCamp Exercises**	-	20%\
-**Assignments** - 20%
+**Assignments** - 30%\
 **Written Exam** 		-	30%\
-**Final Group Project**  - 30%\
+**Final Group Project**  - 20%\
 
 
 ### Grading System
@@ -110,11 +110,11 @@ Install R studio - https://www.rstudio.com/products/rstudio/download/
 
 ## Datacamp Access for Students
 
-Students will have a free subscription to more than 350 courses on Datacamp under **Datacamp for Classroom**. You will be sent an invite link by the instructor. You are required to sign up using your Baruch email address. **Do not use other email addressess. They will not work.**  
+Students will have a free subscription for six months to more than 360 courses on [**Datacamp**](https://www.datacamp.com/) under **Datacamp for Classroom**. You will be sent an invite link by the instructor. You are required to sign up using your Baruch email address. **Do not use other email addresses. They will not work.**  
 
 ## Policy Regarding Make-up Exams and Deadline Extensions
 
-Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be a make up exam only if: 
+Students are responsible for checking the exam dates as well as assignment submission dates and avoid any conflict with other commitments. There will be a make up exam only if: 
 
 -	The student has contacted the instructor before the exam and the instructor has agreed to organize a make-up exam (interviews or business trips do not constitute a valid excuse to have a makeup).\
 -	There is a case of documented serious illness, civic obligation, accident. \
@@ -136,6 +136,7 @@ Examples of accommodations include additional testing time; adaptive equipment; 
 ## Academic Integrity 
 
 I fully support Baruch College's policy on Academic, which states, in part: 
+
 "Academic dishonesty is unacceptable and will not be tolerated. Cheating, forgery, plagiarism, and collusion in dishonest acts undermine the college's educational mission and the students' personal and intellectual growth. Baruch students are expected to bear individual responsibility for their work, to learn the rules and definitions that underlie the practice of academic integrity, and to uphold its ideals. Ignorance of the rules is not an acceptable excuse for disobeying them. Any student who attempts to compromise or devalue the academic process will be sanctioned." Additional information can be found at http://www.baruch.cuny.edu/academic/academic_honesty.html
 
 Students caught cheating will first receive a PEN grade and a report of suspected academic dishonesty will be sent to the Office of the Dean of Students. That grade will then be changed to an F grade (on top of the penalty decided by the Office of the Dean of Students).  
