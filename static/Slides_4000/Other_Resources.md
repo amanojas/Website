@@ -1,5 +1,5 @@
 ---
-title: "Other Supporting Resources"
+title: "Required Coursework"
 subtitle: "Spring 2022"
 output: 
   html_document: 
@@ -16,7 +16,6 @@ output:
 
 
 
-## Required Coursework
 
 ## DataCamp Exercises
 
@@ -24,6 +23,16 @@ output:
 
 - Introduction to Tidyverse
 
-- 
+- Correlation and Regression
+
+- Multiple and Logistic Regression in R
+
+- Inference for Linear Regression
 
 
+## Class Assignments
+
+
+
+
+## Final Project

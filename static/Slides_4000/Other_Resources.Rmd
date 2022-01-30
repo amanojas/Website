@@ -1,5 +1,5 @@
 ---
-title: "Other Supporting Resources"
+title: "Required Coursework"
 subtitle: "Spring 2022"
 output: 
   html_document: 
@@ -18,7 +18,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Required Coursework
 
 ## DataCamp Exercises
 
@@ -26,6 +25,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Introduction to Tidyverse
 
-- 
+- Correlation and Regression
+
+- Multiple and Logistic Regression in R
+
+- Inference for Linear Regression
 
 
+## Class Assignments
+
+
+
+
+## Final Project
