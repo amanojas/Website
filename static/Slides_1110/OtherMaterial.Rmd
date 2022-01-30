@@ -2,9 +2,7 @@
 title: "Other Supporting Resources"
 subtitle: "Spring 2022"
 output: 
-  fidelius::html_password_protected:
-    password: "aman"
-    output_format:rmarkdown::html_document: 
+  html_document: 
     toc: yes
     toc_float: yes
     theme: flatly

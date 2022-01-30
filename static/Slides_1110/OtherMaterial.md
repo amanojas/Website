@@ -50,16 +50,3 @@ Kindly let me know your choice of the book by **February 14th, 2022**.
 Kindly let me know topic of your choice for an essay by **February 14th,2022** via email.
 
 [Topics and Guidelines](\Slides_1110\Essay.pdf)
-
-
-
-
-
- <!--fidelius::html_password_protected:
-  password: "aman"
-  output_format: 
-    rmarkdown::html_document 
-      toc: yes
-      toc_float: yes
-      theme: flatly
-      keep_md: yes-->
