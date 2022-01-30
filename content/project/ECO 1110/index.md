@@ -23,8 +23,8 @@ links:
   url: "/Slides_1110/Slides_All.html"
 - icon: 
   icon_pack: fab
-  name: Examples
-  url: https://github.com/apreshill/bakeoff  
+  name: Other Material
+  url: "/Slides_1110/OtherMaterial.html"  
 ---
 
 <!--![Tachyons Logo Script](tachyons-logo-script.png)
