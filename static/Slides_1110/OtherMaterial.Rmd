@@ -1,12 +1,13 @@
 ---
 title: "Other Supporting Resources"
 subtitle: "Spring 2022"
-output: 
-  html_document: 
-    toc: yes
-    toc_float: yes
-    theme: flatly
-    keep_md: yes
+output:
+  fidelius::html_password_protected:
+  password: "aman"
+  toc: yes
+  toc_float: yes
+  theme: flatly
+  keep_md: yes
 ---
 <style type="text/css">
   body{
