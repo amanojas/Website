@@ -1,6 +1,6 @@
 ---
 title: "Slides"
-date: "2022-01-20"
+date: 
 output: 
   html_document: 
     toc: yes

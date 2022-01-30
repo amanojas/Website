@@ -1,6 +1,6 @@
 ---
 title: "Slides"
-date: "`r Sys.Date()`"
+date: 
 output: 
   html_document: 
     toc: yes
