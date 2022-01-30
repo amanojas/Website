@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
 subtitle: "Spring 2022"
-date: "2022-01-29"
+date: "2022-01-30"
 output: 
   html_document: 
     toc: yes
@@ -35,7 +35,7 @@ STA 2000 or equivalent and ZICK or ZKTP Student Group and ECO-BA Plan or STA-BA 
 
 ## Learning Outcomes
 
-Firms, governmental or non-governmental agencies, regulators, experts, etc., all rely increasingly on data analysis to assess situations and take decisions. Statistical analysis and econometrics offer powerful tools that are easy to use but that need to be used properly. Interpreting correctly results from a statistical analysis is also paramount to the discipline.\
+Firms, governmental or non-governmental agencies, regulators, experts, etc., all rely increasingly on data analysis to assess situations and take decisions. Statistical analysis and econometrics offer powerful tools that are easy to use but that need to be used properly. Interpreting results correctly from a statistical analysis is also paramount to the discipline.\
 
 By the end of the semester students will be able to:  
 
@@ -49,7 +49,8 @@ By the end of the semester students will be able to:
 -	Be able to present the results of a statistical analysis. \
 
 ## Course Materials
-Course material will be posted on the blackboard and will consist of lecture notes, problem sets, and datasets. The course will be self-sufficient. You will not have to buy a textbook. Econometrics is a major component of research in economics and finance. There are many textbooks and supplementary material to be found on the internet including video tutorials, practice problems, and handouts. Students having doubts about the adequacy of a specific source should discuss with the instructor. Students who wish to acquire a textbook should preferably consider one of the following textbooks.\
+
+We will use this site as well as the BLackboard for our purposes in this course.. The course will be self-sufficient. You will not have to buy a textbook. Econometrics is a major component of research in economics and finance. There are many textbooks and supplementary material to be found on the internet including video tutorials, practice problems, and handouts. Students having doubts about the adequacy of a specific source should discuss with the instructor. Students who wish to acquire a textbook should preferably consider one of the following textbooks.\
 
 **Recommended Books**\
 
@@ -74,12 +75,13 @@ April – 15th to 22nd (Spring Recess)\
 Final Exam – As per Baruch College’s Schedule
 
 ## Grading Policy
-Assignments, midterm, and final exams will all be graded over 100 (0 is the worst grade, 100 the best). Sometimes the number of points of each question (in an assignment, the midterm, or the final) is displayed. If the total is higher than 100 the grade will be the percentage of the total number of points. 
 
 ### Course Evaluation Scheme
-**Assignments**	-	40%\
-**Midterm** 		-	30%\
-**Final Exam**  - 30%\
+
+**DataCamp Exercises**	-	20%\
+**Assignments** - 20%
+**Written Exam** 		-	30%\
+**Final Group Project**  - 30%\
 
 
 ### Grading System
@@ -140,7 +142,7 @@ Assignments, midterm, and final exams will all be graded over 100 (0 is the wors
 </table>
 ## Required Software
 
-The assignments throughout the semester will involve some problems that require coding. The primary software for the class will be R as it is open source and available for free to all. 
+The assignments throughout the semester will involve some problems that require coding. The primary software for the class will be R as it is open source and available for free to all. Please find these links below to install R and R-Studio on your machine. 
 
 Install R - https://cran.r-project.org/ 
 
@@ -148,10 +150,11 @@ Install R studio - https://www.rstudio.com/products/rstudio/download/
 
 ## Datacamp Access for Students
 
-Students will have a free subscription to mostly all the courses on Datacamp under **Datacamp for Classroom**. You will be sent an invite link by the instructor. You are required to sign up using your Baruch email. **Do not use other emails. They will not work.**  
+Students will have a free subscription to more than 350 courses on Datacamp under **Datacamp for Classroom**. You will be sent an invite link by the instructor. You are required to sign up using your Baruch email address. **Do not use other email addressess. They will not work.**  
 
 ## Policy Regarding Make-up Exams and Deadline Extensions
-Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be no make-ups for exams except only if: 
+
+Students are responsible for checking the exam dates and avoid any conflict with other commitments. There will be a make up exam only if: 
 
 -	The student has contacted the instructor before the exam and the instructor has agreed to organize a make-up exam (interviews or business trips do not constitute a valid excuse to have a makeup).\
 -	There is a case of documented serious illness, civic obligation, accident. \
@@ -178,51 +181,4 @@ I fully support Baruch College's policy on Academic, which states, in part:
 Students caught cheating will first receive a PEN grade and a report of suspected academic dishonesty will be sent to the Office of the Dean of Students. That grade will then be changed to an F grade (on top of the penalty decided by the Office of the Dean of Students).  
 
 
-
-<!--## Tentative Schedule (subject to change)
-1.	Review of Probability and Statistics
-
-2.	The Simple Regression Model
-2.1.	Definition of the Simple Regression Model
-2.2.	Deriving the Ordinary Least Squares Estimates
-2.3.	Properties of OLS
-2.3.1.	Fitted values and residuals
-2.3.2.	Algebraic properties of OLS statistics
-2.3.3.	Goodness-of-fit
-2.4.	Units of Measurement and Functional Form
-2.5.	Expected Values and Variances of the OLS estimators
-
-3.	Regression Analysis: Inference
-3.1.	Hypothesis testing
-3.2.	Sampling Distribution of the OLS estimators
-3.3.	Testing hypothesis about a single population parameter
-3.3.1.	Testing against one-sided alternatives
-3.3.2.	Two-sided alternatives
-3.3.3.	Computing p-values for t-tests
-3.4.	Confidence intervals
-
-4.	Multiple Regression Analysis
-4.1.	Motivation for Multiple Regression
-4.2.	Mechanics and Interpretation of OLS
-4.2.1.	Interpreting the OLS regression equation
-4.2.2.	Meaning of “holding other factors fixed''
-4.2.3.	Changing more than one independent variable simultaneously
-4.2.4.	Partialling out interpretation of multiple regression
-4.2.5.	Comparison of simple and multiple regression estimates
-4.2.6.	Goodness-of-fit
-4.3.	Expected values of the OLS estimates
-4.3.1.	Including irrelevant variables in a regression model
-4.3.2.	Omitted variable bias
-4.4.	Variance of the OLS estimators
-4.4.1.	Components of the OLS variances, multicollinearity
-4.4.2.	Misspecified models
-4.5.	Efficiency of OLS
-4.6.	Testing multiple linear restrictions; the F - test
-
-5.	Multiple Regression Analysis with Qualitative Information:
-5.1.	Binary (or Dummy) Variables
-5.2.	A single dummy independent variable
-5.3.	Using dummy variables for multiple categories
-5.4.	Interactions involving dummy variables
-5.5.	A binary dependent variable: the linear probability mode-->
 

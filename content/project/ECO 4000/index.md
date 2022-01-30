@@ -19,7 +19,7 @@ links:
   url: "/Slides_4000/Course_Topics.html"
 - icon: 
   icon_pack: fab
-  name: Examples
+  name: Assignments
   url: 
 subtitle: Spring 2022
 # tags:
