@@ -20,7 +20,7 @@ links:
 - icon: 
   icon_pack: fab
   name: Resources
-  url: 
+  url: "/Slides_4000/Other Resources.html"
 subtitle: Spring 2022
 # tags:
 # - hugo-site
