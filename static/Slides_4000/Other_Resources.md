@@ -14,8 +14,16 @@ output:
 }
 </style>
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## DataCamp Assignments
+
+## Required Coursework
+
+## DataCamp Exercises
+
+- Introduction to R
+
+- Introduction to Tidyverse
+
+- 
+
+

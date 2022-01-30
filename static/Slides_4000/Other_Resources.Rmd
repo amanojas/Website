@@ -1,0 +1,31 @@
+---
+title: "Other Supporting Resources"
+subtitle: "Spring 2022"
+output: 
+  html_document: 
+    toc: yes
+    toc_float: yes
+    theme: flatly
+    keep_md: yes
+---
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Required Coursework
+
+## DataCamp Exercises
+
+- Introduction to R
+
+- Introduction to Tidyverse
+
+- 
+
+
