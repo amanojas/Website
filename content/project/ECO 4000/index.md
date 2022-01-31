@@ -20,7 +20,7 @@ links:
 - icon: 
   icon_pack: fab
   name: Assignments
-  url: "/Slides_4000/Other_Resources.html"
+  url: "/Slides_4000/Assignments.html"
 subtitle: Spring 2022
 # tags:
 # - hugo-site
