@@ -15,7 +15,7 @@ links:
   url: "/course syllabus/ECO_4000_Spring_2022.html"
 - icon: 
   icon_pack: fab
-  name: Course Topics
+  name: Course Material
   url: "/Slides_4000/Course_Material.html"
 - icon: 
   icon_pack: fab
