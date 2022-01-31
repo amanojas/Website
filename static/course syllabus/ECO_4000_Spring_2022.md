@@ -78,8 +78,8 @@ Final Exam – As per Baruch College’s Schedule
 
 ### Course Evaluation Scheme
 
-**DataCamp Exercises**	-	20%\
-**Assignments** - 30%\
+**DataCamp Exercises**	-	30%\
+**Assignments** - 20%\
 **Written Exam** 		-	30%\
 **Final Group Project**  - 20%\
 
