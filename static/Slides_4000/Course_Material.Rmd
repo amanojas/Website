@@ -1,5 +1,5 @@
 ---
-title: "Course Topics"
+title: "Course Material"
 subtitle: "Spring 2022"
 date: "`r Sys.Date()`"
 output: 
@@ -20,9 +20,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
+## Material for R
+
+You may find [this pdf](\Slides_4000\R.pdf) useful to get started with R.
+
 ## Review 
 
 - Probability and Statistics
+
+  + [Part 1]()
+  
+  + [Part 2]()
 
 ## The Simple Regression Model
 
