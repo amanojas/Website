@@ -31,6 +31,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Inference for Linear Regression
 
+- Reporting with R Markdown
+
 
 ## Class Assignments
 
