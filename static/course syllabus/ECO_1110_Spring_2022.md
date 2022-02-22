@@ -1,7 +1,7 @@
 ---
 title: "ECO 1110 Current Economic Problems"
 subtitle: "Spring 2022"
-date: "2022-01-29"
+date: "2022-02-22"
 output: 
   html_document: 
     toc: yes
@@ -22,7 +22,7 @@ output:
 **Email** : adesai@gradcenter.cuny.edu\
 **Class Schedule** : MoWe 2:30 PM – 3:45 PM  (In-Person)\
 **Room** :  B - Vert 3-120\
-**Office Hours**: MoWe 1:00 PM - 2:00 PM\
+**Office Hours**: MoWe 1:00 PM - 2:00 PM (B-Vert 10-260)
 
 ## Learning Outcomes
 
@@ -70,12 +70,12 @@ Final Submission Date (Book Report or Essay) – To be announced
 ### Schedule for Quizzes
 
 ```{=html}
-<div id="obnvlqaicq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="wxaseuwhgg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#obnvlqaicq .gt_table {
+#wxaseuwhgg .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: 0;
@@ -100,7 +100,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-left-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_heading {
+#wxaseuwhgg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -112,7 +112,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-right-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_title {
+#wxaseuwhgg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -122,7 +122,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-bottom-width: 0;
 }
 
-#obnvlqaicq .gt_subtitle {
+#wxaseuwhgg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -132,13 +132,13 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-top-width: 0;
 }
 
-#obnvlqaicq .gt_bottom_border {
+#wxaseuwhgg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_col_headings {
+#wxaseuwhgg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -153,7 +153,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-right-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_col_heading {
+#wxaseuwhgg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -173,7 +173,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   overflow-x: hidden;
 }
 
-#obnvlqaicq .gt_column_spanner_outer {
+#wxaseuwhgg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -185,15 +185,15 @@ Final Submission Date (Book Report or Essay) – To be announced
   padding-right: 4px;
 }
 
-#obnvlqaicq .gt_column_spanner_outer:first-child {
+#wxaseuwhgg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#obnvlqaicq .gt_column_spanner_outer:last-child {
+#wxaseuwhgg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#obnvlqaicq .gt_column_spanner {
+#wxaseuwhgg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -205,7 +205,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   width: 100%;
 }
 
-#obnvlqaicq .gt_group_heading {
+#wxaseuwhgg .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -227,7 +227,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   vertical-align: middle;
 }
 
-#obnvlqaicq .gt_empty_group_heading {
+#wxaseuwhgg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -242,15 +242,15 @@ Final Submission Date (Book Report or Essay) – To be announced
   vertical-align: middle;
 }
 
-#obnvlqaicq .gt_from_md > :first-child {
+#wxaseuwhgg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#obnvlqaicq .gt_from_md > :last-child {
+#wxaseuwhgg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#obnvlqaicq .gt_row {
+#wxaseuwhgg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -269,7 +269,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   overflow-x: hidden;
 }
 
-#obnvlqaicq .gt_stub {
+#wxaseuwhgg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -281,7 +281,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   padding-left: 12px;
 }
 
-#obnvlqaicq .gt_summary_row {
+#wxaseuwhgg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -291,7 +291,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   padding-right: 5px;
 }
 
-#obnvlqaicq .gt_first_summary_row {
+#wxaseuwhgg .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -301,7 +301,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-top-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_grand_summary_row {
+#wxaseuwhgg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -311,7 +311,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   padding-right: 5px;
 }
 
-#obnvlqaicq .gt_first_grand_summary_row {
+#wxaseuwhgg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -321,11 +321,11 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-top-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_striped {
+#wxaseuwhgg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#obnvlqaicq .gt_table_body {
+#wxaseuwhgg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -334,7 +334,7 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-bottom-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_footnotes {
+#wxaseuwhgg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -348,13 +348,13 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-right-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_footnote {
+#wxaseuwhgg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#obnvlqaicq .gt_sourcenotes {
+#wxaseuwhgg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -368,41 +368,41 @@ Final Submission Date (Book Report or Essay) – To be announced
   border-right-color: #D3D3D3;
 }
 
-#obnvlqaicq .gt_sourcenote {
+#wxaseuwhgg .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#obnvlqaicq .gt_left {
+#wxaseuwhgg .gt_left {
   text-align: left;
 }
 
-#obnvlqaicq .gt_center {
+#wxaseuwhgg .gt_center {
   text-align: center;
 }
 
-#obnvlqaicq .gt_right {
+#wxaseuwhgg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#obnvlqaicq .gt_font_normal {
+#wxaseuwhgg .gt_font_normal {
   font-weight: normal;
 }
 
-#obnvlqaicq .gt_font_bold {
+#wxaseuwhgg .gt_font_bold {
   font-weight: bold;
 }
 
-#obnvlqaicq .gt_font_italic {
+#wxaseuwhgg .gt_font_italic {
   font-style: italic;
 }
 
-#obnvlqaicq .gt_super {
+#wxaseuwhgg .gt_super {
   font-size: 65%;
 }
 
-#obnvlqaicq .gt_footnote_marks {
+#wxaseuwhgg .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -456,12 +456,12 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
 
 
 ```{=html}
-<div id="ymnvfqtvtv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="oghlbydskl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ymnvfqtvtv .gt_table {
+#oghlbydskl .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: 0;
@@ -486,7 +486,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-left-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_heading {
+#oghlbydskl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -498,7 +498,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-right-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_title {
+#oghlbydskl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -508,7 +508,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-bottom-width: 0;
 }
 
-#ymnvfqtvtv .gt_subtitle {
+#oghlbydskl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -518,13 +518,13 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-top-width: 0;
 }
 
-#ymnvfqtvtv .gt_bottom_border {
+#oghlbydskl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_col_headings {
+#oghlbydskl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -539,7 +539,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-right-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_col_heading {
+#oghlbydskl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -559,7 +559,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   overflow-x: hidden;
 }
 
-#ymnvfqtvtv .gt_column_spanner_outer {
+#oghlbydskl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -571,15 +571,15 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   padding-right: 4px;
 }
 
-#ymnvfqtvtv .gt_column_spanner_outer:first-child {
+#oghlbydskl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ymnvfqtvtv .gt_column_spanner_outer:last-child {
+#oghlbydskl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ymnvfqtvtv .gt_column_spanner {
+#oghlbydskl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -591,7 +591,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   width: 100%;
 }
 
-#ymnvfqtvtv .gt_group_heading {
+#oghlbydskl .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -613,7 +613,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   vertical-align: middle;
 }
 
-#ymnvfqtvtv .gt_empty_group_heading {
+#oghlbydskl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -628,15 +628,15 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   vertical-align: middle;
 }
 
-#ymnvfqtvtv .gt_from_md > :first-child {
+#oghlbydskl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ymnvfqtvtv .gt_from_md > :last-child {
+#oghlbydskl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ymnvfqtvtv .gt_row {
+#oghlbydskl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -655,7 +655,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   overflow-x: hidden;
 }
 
-#ymnvfqtvtv .gt_stub {
+#oghlbydskl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -667,7 +667,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   padding-left: 12px;
 }
 
-#ymnvfqtvtv .gt_summary_row {
+#oghlbydskl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -677,7 +677,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   padding-right: 5px;
 }
 
-#ymnvfqtvtv .gt_first_summary_row {
+#oghlbydskl .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -687,7 +687,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-top-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_grand_summary_row {
+#oghlbydskl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -697,7 +697,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   padding-right: 5px;
 }
 
-#ymnvfqtvtv .gt_first_grand_summary_row {
+#oghlbydskl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -707,11 +707,11 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-top-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_striped {
+#oghlbydskl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ymnvfqtvtv .gt_table_body {
+#oghlbydskl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -720,7 +720,7 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-bottom-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_footnotes {
+#oghlbydskl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -734,13 +734,13 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-right-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_footnote {
+#oghlbydskl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ymnvfqtvtv .gt_sourcenotes {
+#oghlbydskl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -754,41 +754,41 @@ If you miss the quiz for any reason, you will get zero points. Please feel free 
   border-right-color: #D3D3D3;
 }
 
-#ymnvfqtvtv .gt_sourcenote {
+#oghlbydskl .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ymnvfqtvtv .gt_left {
+#oghlbydskl .gt_left {
   text-align: left;
 }
 
-#ymnvfqtvtv .gt_center {
+#oghlbydskl .gt_center {
   text-align: center;
 }
 
-#ymnvfqtvtv .gt_right {
+#oghlbydskl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ymnvfqtvtv .gt_font_normal {
+#oghlbydskl .gt_font_normal {
   font-weight: normal;
 }
 
-#ymnvfqtvtv .gt_font_bold {
+#oghlbydskl .gt_font_bold {
   font-weight: bold;
 }
 
-#ymnvfqtvtv .gt_font_italic {
+#oghlbydskl .gt_font_italic {
   font-style: italic;
 }
 
-#ymnvfqtvtv .gt_super {
+#oghlbydskl .gt_super {
   font-size: 65%;
 }
 
-#ymnvfqtvtv .gt_footnote_marks {
+#oghlbydskl .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
