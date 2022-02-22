@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
 subtitle: "Spring 2022"
-date: "2022-01-30"
+date: "2022-02-22"
 output: 
   html_document: 
     toc: yes
@@ -22,7 +22,7 @@ output:
 **Email** : adesai@gradcenter.cuny.edu\
 **Class Schedule** : MoWe 9:05 AM-10:20AM (In-Person)\
 **Room** : B - Vert 5-160\
-**Office Hours**: MoWe 10:30 AM - 11:30 AM\
+**Office Hours**: MoWe 10:30 AM - 11:30 AM (B-Vert 10-260)\
 
 
 ## Course Description
