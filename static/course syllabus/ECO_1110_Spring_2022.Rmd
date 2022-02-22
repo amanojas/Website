@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = TRUE)
 **Email** : adesai@gradcenter.cuny.edu\
 **Class Schedule** : MoWe 2:30 PM – 3:45 PM  (In-Person)\
 **Room** :  B - Vert 3-120\
-**Office Hours**: MoWe 1:00 PM - 2:00 PM (B-Vert 10-260)\
+**Office Hours**: MoWe 1:00 PM - 2:00 PM (B-Vert 10-260)
 
 ## Learning Outcomes
 
