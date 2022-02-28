@@ -149,4 +149,4 @@ pvalt
 ```
 As we notice above, the absolute value of t-calculated = 3.29 is greater than the absolute value of t-critical = 1.69. Therefore,we reject the null hypothesis being $\mu = 15$.
 
-p-value is here is 0.002 which is less than 0.05. Therefore,we reject the null hypothesis being $\mu = 15$. 
+p-value here is 0.002 which is less than 0.05. Therefore,we reject the null hypothesis being $\mu = 15$. 
