@@ -26,109 +26,26 @@ install.packages(packages, repos='http://cran.us.r-project.org') # Installing pa
 lapply(packages, library, character.only = T) # Loading the packages
 ```
 
-### Reading data files into R
+## Reading data files into R
 
 Below are some ways to load the data files in diffrent formats. To load excel and Stata datafiles, you will need to install the packages "readxl" and "foreign" respectively.
 
 
 ```r
 bwsmoking_excel <- read_xlsx("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\birthweight_smoking.xlsx")
-bwsmoking_excel
-```
 
-```
-## # A tibble: 3,000 x 12
-##    nprevist alcohol tripre1 tripre2 tripre3 tripre0 birthweight smoker unmarried
-##       <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>       <dbl>  <dbl>     <dbl>
-##  1       12       0       1       0       0       0        4253      1         1
-##  2        5       0       0       1       0       0        3459      0         0
-##  3       12       0       1       0       0       0        2920      1         0
-##  4       13       0       1       0       0       0        2600      0         0
-##  5        9       0       1       0       0       0        3742      0         0
-##  6       11       0       1       0       0       0        3420      0         0
-##  7       12       0       1       0       0       0        2325      1         0
-##  8       10       0       1       0       0       0        4536      0         0
-##  9       13       0       1       0       0       0        2850      0         0
-## 10       10       0       1       0       0       0        2948      0         0
-## # ... with 2,990 more rows, and 3 more variables: educ <dbl>, age <dbl>,
-## #   drinks <dbl>
-```
-
-```r
 ## Read a csv file
 
 bwsmoking_csv<- read_csv("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\bwsmoking.csv")
-bwsmoking_excel
-```
 
-```
-## # A tibble: 3,000 x 12
-##    nprevist alcohol tripre1 tripre2 tripre3 tripre0 birthweight smoker unmarried
-##       <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>       <dbl>  <dbl>     <dbl>
-##  1       12       0       1       0       0       0        4253      1         1
-##  2        5       0       0       1       0       0        3459      0         0
-##  3       12       0       1       0       0       0        2920      1         0
-##  4       13       0       1       0       0       0        2600      0         0
-##  5        9       0       1       0       0       0        3742      0         0
-##  6       11       0       1       0       0       0        3420      0         0
-##  7       12       0       1       0       0       0        2325      1         0
-##  8       10       0       1       0       0       0        4536      0         0
-##  9       13       0       1       0       0       0        2850      0         0
-## 10       10       0       1       0       0       0        2948      0         0
-## # ... with 2,990 more rows, and 3 more variables: educ <dbl>, age <dbl>,
-## #   drinks <dbl>
-```
-
-```r
 ## Read a STATA file (will require package named "foreign")
 
 bwsmoking_stata <- read.dta("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\birthweight_smoking.dta")
-bwsmoking_excel
-```
 
-```
-## # A tibble: 3,000 x 12
-##    nprevist alcohol tripre1 tripre2 tripre3 tripre0 birthweight smoker unmarried
-##       <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>       <dbl>  <dbl>     <dbl>
-##  1       12       0       1       0       0       0        4253      1         1
-##  2        5       0       0       1       0       0        3459      0         0
-##  3       12       0       1       0       0       0        2920      1         0
-##  4       13       0       1       0       0       0        2600      0         0
-##  5        9       0       1       0       0       0        3742      0         0
-##  6       11       0       1       0       0       0        3420      0         0
-##  7       12       0       1       0       0       0        2325      1         0
-##  8       10       0       1       0       0       0        4536      0         0
-##  9       13       0       1       0       0       0        2850      0         0
-## 10       10       0       1       0       0       0        2948      0         0
-## # ... with 2,990 more rows, and 3 more variables: educ <dbl>, age <dbl>,
-## #   drinks <dbl>
-```
-
-```r
 ## Read an RDS file 
 
 bwsmoking_R <- readRDS("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\bwsmoking.rds")
-bwsmoking_excel
 ```
-
-```
-## # A tibble: 3,000 x 12
-##    nprevist alcohol tripre1 tripre2 tripre3 tripre0 birthweight smoker unmarried
-##       <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>       <dbl>  <dbl>     <dbl>
-##  1       12       0       1       0       0       0        4253      1         1
-##  2        5       0       0       1       0       0        3459      0         0
-##  3       12       0       1       0       0       0        2920      1         0
-##  4       13       0       1       0       0       0        2600      0         0
-##  5        9       0       1       0       0       0        3742      0         0
-##  6       11       0       1       0       0       0        3420      0         0
-##  7       12       0       1       0       0       0        2325      1         0
-##  8       10       0       1       0       0       0        4536      0         0
-##  9       13       0       1       0       0       0        2850      0         0
-## 10       10       0       1       0       0       0        2948      0         0
-## # ... with 2,990 more rows, and 3 more variables: educ <dbl>, age <dbl>,
-## #   drinks <dbl>
-```
-
 
 
 ## One Sample Hypothesis Testing
@@ -372,7 +289,7 @@ for (i in 1:n) {
 
 ggplot(data = coeffs, aes(x = b_1), color = "blue")+
   geom_density()+
-  geom_density(data = coeffs_2, aes(x = b_12), color = "yellow")
+  geom_density(data = coeffs_2, aes(x = b_12), color = "red")
 ```
 
 ![](Example_Codes_files/figure-html/unnamed-chunk-7-1.png)<!-- -->

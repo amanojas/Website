@@ -220,7 +220,7 @@ for (i in 1:n) {
 
 ggplot(data = coeffs, aes(x = b_1), color = "blue")+
   geom_density()+
-  geom_density(data = coeffs_2, aes(x = b_12), color = "yellow")
+  geom_density(data = coeffs_2, aes(x = b_12), color = "red")
 
 ```
 
