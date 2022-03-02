@@ -227,6 +227,5 @@ ggplot(data = coeffs, aes(x = b_1), color = "blue")+
 ```
 
 
-## How to Load a dataset in R
 
 
