@@ -49,7 +49,6 @@ bwsmoking_R <- readRDS("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight 
 ```
 
 
-
 ## One Sample Hypothesis Testing
 These examples are from the practice problem set provided to the students. 
 
