@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-02-27"
+date: "2022-02-28"
 output: 
   html_document: 
     toc: yes
@@ -19,8 +19,8 @@ output:
 
  
 
-```r
-packages <- c("tidyverse","stargazer","AER","asbio","tigerstats") ## This is how you define an object (which is a vector here)
+```{.r .bg-success}
+packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign") ## This is how you define an object (which is a vector here)
 install.packages(packages, repos='http://cran.us.r-project.org') # Installing packages at once
 lapply(packages, library, character.only = T) # Loading the packages
 ```
@@ -217,3 +217,65 @@ pvalt
 As we notice above, the absolute value of t-calculated = 3.29 is greater than the absolute value of t-critical = 1.69. Therefore,we reject the null hypothesis being $\mu = 15$.
 
 p-value here is 0.002 which is less than 0.05. Therefore,we reject the null hypothesis being $\mu = 15$. 
+
+
+
+## Monte Carlo Simulation to Confirm the Unbiasedness of Slope Parameter
+
+
+```r
+## POPULATION PARAMETERS
+B0 = 2
+B1 = 0.5
+
+
+
+
+n = 10000
+
+coeffs <- tibble(b_0 = rep(0,n),b_1 = rep(0,n))
+
+for (i in 1:n) {
+  
+  dat1 <- tibble(X = 1:50, u = rnorm(50), Y = B0 + B1*X + u)
+  reg <- lm(Y~X, data = dat1)
+  model <- summary(reg)
+  
+  coeffs$b_0[i] = model$coefficients[1,1]
+  coeffs$b_1[i] = model$coefficients[2,1]
+  
+}
+
+### With increased error
+
+coeffs_2 <- tibble(b_02 = rep(0,n),b_12 = rep(0,n))
+
+for (i in 1:n) {
+  
+  dat2 <- tibble(X = 1:50, u = rnorm(50), Y = B0 + B1*X + 2*u)
+  reg2 <- lm(Y~X, data = dat2)
+  model2 <- summary(reg2)
+  
+  coeffs_2$b_02[i] = model2$coefficients[1,1]
+  coeffs_2$b_12[i] = model2$coefficients[2,1]
+  
+}
+
+
+##### Plot the data
+
+ggplot(data = coeffs, aes(x = b_1), color = "blue")+
+  geom_density()+
+  geom_density(data = coeffs_2, aes(x = b_12), color = "yellow")
+```
+
+![](Example_Codes_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+
+
+## How to Load a dataset in R
+
+
+```r
+bwsmoking <- read_xlsx("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\birthweight_smoking.xlsx")
+```
+
