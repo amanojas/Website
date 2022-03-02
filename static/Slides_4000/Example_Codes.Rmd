@@ -33,19 +33,18 @@ Below are some ways to load the data files in diffrent formats. To load excel an
 
 ```{r load data,include=TRUE, warning=FALSE, message=FALSE}
 bwsmoking_excel <- read_xlsx("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\birthweight_smoking.xlsx")
-# bwsmoking_excel
+
 ## Read a csv file
 
 bwsmoking_csv<- read_csv("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\bwsmoking.csv")
-# bwsmoking_excel
+
 ## Read a STATA file (will require package named "foreign")
 
 bwsmoking_stata <- read.dta("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\birthweight_smoking.dta")
-# bwsmoking_excel
+
 ## Read an RDS file 
 
 bwsmoking_R <- readRDS("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\bwsmoking.rds")
-# bwsmoking_excel
 ```
 
 
