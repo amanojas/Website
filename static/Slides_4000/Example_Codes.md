@@ -289,7 +289,8 @@ for (i in 1:n) {
 
 ggplot(data = coeffs, aes(x = b_1), color = "blue")+
   geom_density()+
-  geom_density(data = coeffs_2, aes(x = b_12), color = "green")
+  geom_density(data = coeffs_2, aes(x = b_12), color = "green")+
+  xlab("beta_hat")
 ```
 
 ![](Example_Codes_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
