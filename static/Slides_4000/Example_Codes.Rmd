@@ -235,10 +235,11 @@ For this exercise we will require to install r package "wooldridge". This packag
 load("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\ceosal1.RData")
 ceo1 <- data
 
+## Summary Statistics
+
+stargazer(ceo1, type = "html",digits = 2)
 
 ## plot the data 
-
-
 p1 <- ggplot(data = ceo1, aes(x = roe, y = salary)) +
   geom_point()+
   geom_smooth(method = "lm")+

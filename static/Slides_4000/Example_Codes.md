@@ -306,10 +306,29 @@ For this exercise we will require to install r package "wooldridge". This packag
 load("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\ceosal1.RData")
 ceo1 <- data
 
+## Summary Statistics
 
+stargazer(ceo1, type = "html",digits = 2)
+```
+
+
+<table style="text-align:center"><tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Statistic</td><td>N</td><td>Mean</td><td>St. Dev.</td><td>Min</td><td>Max</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">salary</td><td>209</td><td>1,281.12</td><td>1,372.35</td><td>223</td><td>14,822</td></tr>
+<tr><td style="text-align:left">pcsalary</td><td>209</td><td>13.28</td><td>32.63</td><td>-61</td><td>212</td></tr>
+<tr><td style="text-align:left">sales</td><td>209</td><td>6,923.79</td><td>10,633.27</td><td>175.20</td><td>97,649.90</td></tr>
+<tr><td style="text-align:left">roe</td><td>209</td><td>17.18</td><td>8.52</td><td>0.50</td><td>56.30</td></tr>
+<tr><td style="text-align:left">pcroe</td><td>209</td><td>10.80</td><td>97.22</td><td>-98.90</td><td>977.00</td></tr>
+<tr><td style="text-align:left">ros</td><td>209</td><td>61.80</td><td>68.18</td><td>-58</td><td>418</td></tr>
+<tr><td style="text-align:left">indus</td><td>209</td><td>0.32</td><td>0.47</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">finance</td><td>209</td><td>0.22</td><td>0.42</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">consprod</td><td>209</td><td>0.29</td><td>0.45</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">utility</td><td>209</td><td>0.17</td><td>0.38</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">lsalary</td><td>209</td><td>6.95</td><td>0.57</td><td>5.41</td><td>9.60</td></tr>
+<tr><td style="text-align:left">lsales</td><td>209</td><td>8.29</td><td>1.01</td><td>5.17</td><td>11.49</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr></table>
+
+```r
 ## plot the data 
-
-
 p1 <- ggplot(data = ceo1, aes(x = roe, y = salary)) +
   geom_point()+
   geom_smooth(method = "lm")+
