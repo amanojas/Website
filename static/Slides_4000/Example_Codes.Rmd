@@ -15,6 +15,22 @@ output:
   font-size: 12pt;
 }
 </style>
+
+
+```{css, echo = FALSE}
+
+table, td, th {
+  border: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+```
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -231,6 +247,14 @@ For this exercise we will require to install r package "wooldridge". This packag
 
 **E1. For the population of chief executive officers, let Y be annual salary (salary) in thousands of dollars.Thus, y = 856.3 indicates an annual salary of $856,300, and y = 1,452.6 indicates a salary of \$1,452,600. Let X be the average return on equity (roe) for the CEO’s firm for the previous three years. (Return on equity is defined in terms of net income as a percentage of common equity.) For example, if roe = 10, then average return on equity is 10%.**
 
+We postulate that our model is 
+
+$$salary = \beta_{0} + \beta_{1} roe + u$$
+
+The slope parameter $\beta_{1}$ measure the change in annual salary when the return on equity increases by one percentage point. Since, a higher *roe* is good for the company, we expect $\beta_{1}$ to be positive.
+
+Always start with looking at the summary statistics of your data. It is helpful to get the feel of the data before we start our analysis.
+
 ```{r echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
 load("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\ceosal1.RData")
 ceo1 <- data
@@ -258,4 +282,9 @@ model_1 <- lm(data = ceo1, salary ~ roe)
 stargazer(model_1, type = "html",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
+
+
+We have the results after fitting the model. Out fitted model looks like this
+
+$$\widehat{salary} = 963.191 + 18.501 roe$$
 

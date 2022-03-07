@@ -17,6 +17,22 @@ output:
 </style>
 
 
+<style type="text/css">
+
+table, td, th {
+  border: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+</style>
+
+
+
 
  
 
@@ -153,7 +169,7 @@ As we notice above, the absolute value of z-calculated = 2.33 is less than the a
 $$H_{0} :\mu \geq 580$$
 $$H_{1} :\mu < 580$$
 
-![](Example_Codes_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](Example_Codes_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 
 
@@ -293,13 +309,21 @@ ggplot(data = coeffs, aes(x = b_1), color = "blue")+
   xlab("beta_hat")
 ```
 
-![](Example_Codes_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](Example_Codes_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 ## Regression Analysis Interpretation Examples
 
 For this exercise we will require to install r package "wooldridge". This package contains all the data that are used in [Wooldridge's Introductory Econometrics](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/9781305270107/) textbook. We will use those data sets for our purpose.
 
 **E1. For the population of chief executive officers, let Y be annual salary (salary) in thousands of dollars.Thus, y = 856.3 indicates an annual salary of $856,300, and y = 1,452.6 indicates a salary of \$1,452,600. Let X be the average return on equity (roe) for the CEO’s firm for the previous three years. (Return on equity is defined in terms of net income as a percentage of common equity.) For example, if roe = 10, then average return on equity is 10%.**
+
+We postulate that our model is 
+
+$$salary = \beta_{0} + \beta_{1} roe + u$$
+
+The slope parameter $\beta_{1}$ measure the change in annual salary when the return on equity increases by one percentage point. Since, a higher *roe* is good for the company, we expect $\beta_{1}$ to be positive.
+
+Always start with looking at the summary statistics of your data. It is helpful to get the feel of the data before we start our analysis.
 
 
 ```r
@@ -344,7 +368,7 @@ p2 <- ggplot(data = ceo1, aes(x = roe, y = lsalary)) +
 gridExtra::grid.arrange(p1,p2)
 ```
 
-![](Example_Codes_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](Example_Codes_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 ```r
 model_1 <- lm(data = ceo1, salary ~ roe)
@@ -369,4 +393,9 @@ stargazer(model_1, type = "html",notes.append = FALSE,notes = c("<sup>&sstarf;</
 <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
+
+
+We have the results after fitting the model. Out fitted model looks like this
+
+$$\widehat{salary} = 963.191 + 18.501 roe$$
 

@@ -334,6 +334,19 @@ div.tocify {
   font-size: 12pt;
 }
 </style>
+<style type="text/css">
+
+table, td, th {
+  border: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+</style>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>packages <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;tidyverse&quot;</span>,<span class="st">&quot;stargazer&quot;</span>,<span class="st">&quot;AER&quot;</span>,<span class="st">&quot;asbio&quot;</span>,<span class="st">&quot;tigerstats&quot;</span>,<span class="st">&quot;readxl&quot;</span>,<span class="st">&quot;foreign&quot;</span>,<span class="st">&quot;wooldridge&quot;</span>) <span class="do">## This is how you define an object (which is a vector here)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(packages, <span class="at">repos=</span><span class="st">&#39;http://cran.us.r-project.org&#39;</span>) <span class="co"># Installing packages at once</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(packages, library, <span class="at">character.only =</span> T) <span class="co"># Loading the packages</span></span></code></pre></div>
@@ -533,6 +546,10 @@ Test the company’s claim at 5% and 1% significance level.</p>
 <h2>Regression Analysis Interpretation Examples</h2>
 <p>For this exercise we will require to install r package “wooldridge”. This package contains all the data that are used in <a href="https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/9781305270107/">Wooldridge’s Introductory Econometrics</a> textbook. We will use those data sets for our purpose.</p>
 <p><strong>E1. For the population of chief executive officers, let Y be annual salary (salary) in thousands of dollars.Thus, y = 856.3 indicates an annual salary of $856,300, and y = 1,452.6 indicates a salary of $1,452,600. Let X be the average return on equity (roe) for the CEO’s firm for the previous three years. (Return on equity is defined in terms of net income as a percentage of common equity.) For example, if roe = 10, then average return on equity is 10%.</strong></p>
+<p>We postulate that our model is</p>
+<p><span class="math display">\[salary = \beta_{0} + \beta_{1} roe + u\]</span></p>
+<p>The slope parameter <span class="math inline">\(\beta_{1}\)</span> measure the change in annual salary when the return on equity increases by one percentage point. Since, a higher <em>roe</em> is good for the company, we expect <span class="math inline">\(\beta_{1}\)</span> to be positive.</p>
+<p>Always start with looking at the summary statistics of your data. It is helpful to get the feel of the data before we start our analysis.</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;S:</span><span class="sc">\\</span><span class="st">Baruch</span><span class="sc">\\</span><span class="st">ECO 4000</span><span class="sc">\\</span><span class="st">Spring2022</span><span class="sc">\\</span><span class="st">Datasets</span><span class="sc">\\</span><span class="st">ceosal1.RData&quot;</span>)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>ceo1 <span class="ot">&lt;-</span> data</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -958,6 +975,8 @@ F Statistic
 </td>
 </tr>
 </table>
+<p>We have the results after fitting the model. Out fitted model looks like this</p>
+<p><span class="math display">\[\widehat{salary} = 963.191 + 18.501 roe\]</span></p>
 </div>
 
 
