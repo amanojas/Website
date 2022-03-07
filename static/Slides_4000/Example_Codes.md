@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-03-02"
+date: "2022-03-07"
 output: 
   html_document: 
     toc: yes
@@ -21,14 +21,14 @@ output:
  
 
 ```r
-packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign") ## This is how you define an object (which is a vector here)
+packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign","wooldridge") ## This is how you define an object (which is a vector here)
 install.packages(packages, repos='http://cran.us.r-project.org') # Installing packages at once
 lapply(packages, library, character.only = T) # Loading the packages
 ```
 
 ## Reading data files into R
 
-Below are some ways to load the data files in diffrent formats. To load excel and Stata datafiles, you will need to install the packages "readxl" and "foreign" respectively.
+Below are some ways to load the data files in different formats. To load excel and Stata data files, you will need to install the packages "readxl" and "foreign" respectively.
 
 
 ```r
@@ -295,6 +295,59 @@ ggplot(data = coeffs, aes(x = b_1), color = "blue")+
 
 ![](Example_Codes_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
+## Regression Analysis Interpretation Examples
 
+For this exercise we will require to install r package "wooldridge". This package contains all the data that are used in [Wooldridge's Introductory Econometrics](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/9781305270107/) textbook. We will use those data sets for our purpose.
+
+**E1. For the population of chief executive officers, let Y be annual salary (salary) in thousands of dollars.Thus, y = 856.3 indicates an annual salary of $856,300, and y = 1,452.6 indicates a salary of \$1,452,600. Let X be the average return on equity (roe) for the CEO’s firm for the previous three years. (Return on equity is defined in terms of net income as a percentage of common equity.) For example, if roe = 10, then average return on equity is 10%.**
+
+
+```r
+load("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\ceosal1.RData")
+ceo1 <- data
+
+
+## plot the data 
+
+
+p1 <- ggplot(data = ceo1, aes(x = roe, y = salary)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Return on Equity")+
+  ylab("Salary")
+
+p2 <- ggplot(data = ceo1, aes(x = roe, y = lsalary)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Return on Equity")+
+  ylab("Log Salary")
+
+gridExtra::grid.arrange(p1,p2)
+```
+
+![](Example_Codes_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+
+```r
+model_1 <- lm(data = ceo1, salary ~ roe)
+stargazer(model_1, type = "html",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+<table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>salary</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">roe</td><td>18.501<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(11.123)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>963.191<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(213.240)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>209</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.013</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.008</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>1,366.555 (df = 207)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>2.767<sup>*</sup> (df = 1; 207)</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+</table>
 
 
