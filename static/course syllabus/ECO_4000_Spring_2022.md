@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
 subtitle: "Spring 2022"
-date: "2022-02-22"
+date: "2022-03-08"
 output: 
   html_document: 
     toc: yes
@@ -22,7 +22,7 @@ output:
 **Email** : adesai@gradcenter.cuny.edu\
 **Class Schedule** : MoWe 9:05 AM-10:20AM (In-Person)\
 **Room** : B - Vert 5-160\
-**Office Hours**: MoWe 10:30 AM - 11:30 AM (B-Vert 10-260)\
+**Office Hours**: MoWe 10:30 AM - 11:30 AM (B-Vert 10-260)
 
 
 ## Course Description
@@ -50,7 +50,7 @@ By the end of the semester students will be able to:
 
 ## Course Materials
 
-We will use this site as well as the Blackboard for our purposes in this course. The course will be self-sufficient. You will not have to buy a textbook. Econometrics is a major component of research in economics and finance. There are many textbooks and supplementary material to be found on the internet including video tutorials, practice problems, and handouts. Students having doubts about the adequacy of a specific source should discuss with the instructor. Students who wish to acquire a textbook should preferably consider one of the following textbooks.\
+We will use this site as well as the Blackboard for our purposes in this course. The course will be self - contained. You will not have to buy a textbook. Econometrics is a major component of research in economics and finance. There are many textbooks and supplementary material to be found on the internet including video tutorials, practice problems, and handouts. Students having doubts about the adequacy of a specific source should discuss with the instructor. Students who wish to acquire a textbook should preferably consider one of the following textbooks.\
 
 **Recommended Books**\
 
