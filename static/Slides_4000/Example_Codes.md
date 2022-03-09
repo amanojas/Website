@@ -259,7 +259,7 @@ p-value here is 0.002 which is less than 0.05. Therefore,we reject the null hypo
 
 
 
-## Monte Carlo Simulation to Confirm the Unbiasedness of Slope Parameter
+## Monte Carlo Simulation to Confirm the Unbiasedness of the Slope Parameter
 
 
 ```r
