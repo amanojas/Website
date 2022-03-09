@@ -554,8 +554,11 @@ Test the company’s claim at 5% and 1% significance level.</p>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Summary Statistics</span></span>
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(ceo1, <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(ceo1, <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">digits =</span> <span class="dv">2</span>, <span class="at">title =</span> <span class="st">&quot;Descriptive Statistics&quot;</span>)</span></code></pre></div>
 <table style="text-align:center">
+<caption>
+<strong>Descriptive Statistics</strong>
+</caption>
 <tr>
 <td colspan="6" style="border-bottom: 1px solid black">
 </td>
@@ -848,8 +851,11 @@ lsales
 <p>We have the results after fitting the model. Out fitted model looks like this</p>
 <p><span class="math display">\[\widehat{salary} = 963.191 + 18.501 roe\]</span></p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>model_1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> ceo1, salary <span class="sc">~</span> roe)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(model_1, <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">notes.append =</span> <span class="cn">FALSE</span>,<span class="at">notes =</span> <span class="fu">c</span>(<span class="st">&quot;&lt;sup&gt;&amp;sstarf;&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.01&quot;</span>))</span></code></pre></div>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(model_1, <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">dep.var.labels   =</span> <span class="st">&quot;Salary&quot;</span>, <span class="at">title =</span> <span class="st">&quot;CEO Salary and Return on Equity&quot;</span>, <span class="at">style =</span> <span class="st">&quot;qje&quot;</span>,<span class="at">notes.append =</span> <span class="cn">FALSE</span>,<span class="at">notes =</span> <span class="fu">c</span>(<span class="st">&quot;&lt;sup&gt;&amp;sstarf;&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.01&quot;</span>))</span></code></pre></div>
 <table style="text-align:center">
+<caption>
+<strong>CEO Salary and Return on Equity</strong>
+</caption>
 <tr>
 <td colspan="2" style="border-bottom: 1px solid black">
 </td>
@@ -858,20 +864,7 @@ lsales
 <td style="text-align:left">
 </td>
 <td>
-<em>Dependent variable:</em>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-<td colspan="1" style="border-bottom: 1px solid black">
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td>
-salary
+Salary
 </td>
 </tr>
 <tr>
@@ -921,12 +914,8 @@ Constant
 </td>
 </tr>
 <tr>
-<td colspan="2" style="border-bottom: 1px solid black">
-</td>
-</tr>
-<tr>
 <td style="text-align:left">
-Observations
+<em>N</em>
 </td>
 <td>
 209
@@ -970,7 +959,7 @@ F Statistic
 </tr>
 <tr>
 <td style="text-align:left">
-<em>Note:</em>
+<em>Notes:</em>
 </td>
 <td style="text-align:right">
 <sup>⋆</sup>p&lt;0.1; <sup>⋆⋆</sup>p&lt;0.05; <sup>⋆⋆⋆</sup>p&lt;0.01

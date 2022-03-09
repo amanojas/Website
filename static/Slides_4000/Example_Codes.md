@@ -330,11 +330,12 @@ ceo1 <- data
 
 ## Summary Statistics
 
-stargazer(ceo1, type = "html",digits = 2)
+stargazer(ceo1, type = "html",digits = 2, title = "Descriptive Statistics")
 ```
 
 
-<table style="text-align:center"><tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Statistic</td><td>N</td><td>Mean</td><td>St. Dev.</td><td>Min</td><td>Max</td></tr>
+<table style="text-align:center"><caption><strong>Descriptive Statistics</strong></caption>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Statistic</td><td>N</td><td>Mean</td><td>St. Dev.</td><td>Min</td><td>Max</td></tr>
 <tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">salary</td><td>209</td><td>1,281.12</td><td>1,372.35</td><td>223</td><td>14,822</td></tr>
 <tr><td style="text-align:left">pcsalary</td><td>209</td><td>13.28</td><td>32.63</td><td>-61</td><td>212</td></tr>
 <tr><td style="text-align:left">sales</td><td>209</td><td>6,923.79</td><td>10,633.27</td><td>175.20</td><td>97,649.90</td></tr>
@@ -377,25 +378,24 @@ $$\widehat{salary} = 963.191 + 18.501 roe$$
 
 ```r
 model_1 <- lm(data = ceo1, salary ~ roe)
-stargazer(model_1, type = "html",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+stargazer(model_1, type = "html",dep.var.labels   = "Salary", title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
 
-<table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
-<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
-<tr><td style="text-align:left"></td><td>salary</td></tr>
+<table style="text-align:center"><caption><strong>CEO Salary and Return on Equity</strong></caption>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>Salary</td></tr>
 <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">roe</td><td>18.501<sup>*</sup></td></tr>
 <tr><td style="text-align:left"></td><td>(11.123)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
 <tr><td style="text-align:left">Constant</td><td>963.191<sup>***</sup></td></tr>
 <tr><td style="text-align:left"></td><td>(213.240)</td></tr>
 <tr><td style="text-align:left"></td><td></td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>209</td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>209</td></tr>
 <tr><td style="text-align:left">R<sup>2</sup></td><td>0.013</td></tr>
 <tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.008</td></tr>
 <tr><td style="text-align:left">Residual Std. Error</td><td>1,366.555 (df = 207)</td></tr>
 <tr><td style="text-align:left">F Statistic</td><td>2.767<sup>*</sup> (df = 1; 207)</td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
 where the intercept and slope estimates have been rounded to three decimal places; we use “salary hat” to indicate that this is an estimated equation. 

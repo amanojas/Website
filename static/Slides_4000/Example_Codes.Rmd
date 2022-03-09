@@ -259,7 +259,7 @@ ceo1 <- data
 
 ## Summary Statistics
 
-stargazer(ceo1, type = "html",digits = 2)
+stargazer(ceo1, type = "html",digits = 2, title = "Descriptive Statistics")
 ```
 
 Always start with looking at the summary statistics of your data. It is helpful to get the feel of the data before we start our analysis.The data set **CEOSAL1** contains information on 209 CEOs for the year 1990; these data were obtained from Business Week (5/6/91). In this sample, the average annual salary is \$1,281,120, with the smallest and largest being \$223,000 and $14,822,000, respectively. The average return on equity for the years 1988, 1989, and 1990 is 17.18%, with the smallest and largest values being 0.5% and 56.3%, respectively.
@@ -286,7 +286,7 @@ We have the results after fitting the model. Out fitted model looks like this
 $$\widehat{salary} = 963.191 + 18.501 roe$$
 ```{r regression,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
 model_1 <- lm(data = ceo1, salary ~ roe)
-stargazer(model_1, type = "html",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+stargazer(model_1, type = "html",dep.var.labels   = "Salary", title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
 where the intercept and slope estimates have been rounded to three decimal places; we use “salary hat” to indicate that this is an estimated equation. 
