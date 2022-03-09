@@ -311,7 +311,7 @@ ggplot(data = coeffs, aes(x = b_1), color = "blue")+
 
 ![](Example_Codes_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
-## Regression Analysis Interpretation Examples
+## Simple Linear Regression Result Interpretation 
 
 For this exercise we will require to install r package "wooldridge". This package contains all the data that are used in [Wooldridge's Introductory Econometrics](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/9781305270107/) textbook. We will use those data sets for our purpose.
 
