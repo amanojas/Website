@@ -411,5 +411,5 @@ Because it is a linear equation, this is the estimated change regardless of the 
 
 **Question** :  What is the predicted salary of a CEO if the return on equity is 30 percent?
 
-We can use our fitted model, $\widehat{salary},  = 963.191 + 18.501 roe$. Plug in the value of roe = 30. i.e. $\widehat{salary} = 963.191 + 18.501 (30) = 1,518,221$, which is over \$1.5 million dollars. This is the predicted value that our model gives us. Now, keep in mind as we talked about it in the class, the assumption of zero conditional mean does not satisfy in this case. There are other variables that potentially affect the salary of a CEO. 
+We can use our fitted model, $\widehat{salary},  = 963.191 + 18.501 roe$. Plug in the value of roe = 30. i.e. $\widehat{salary} = 963.191 + 18.501 (30) = 1,518,221$, which is over \$1.5 million dollars. This is the predicted value that our model gives us. Now, keep in mind as we talked about it in the class, the assumption of zero conditional mean does not satisfy in this case. There are other variables that could potentially affect the salary of a CEO. 
 
