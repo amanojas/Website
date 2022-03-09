@@ -188,7 +188,7 @@ z_one_sided
 ## [1] 1.644854
 ```
 
-As we notice above, the absolute value of z-calculated = 1 is less than the absolute value of z-critical = 1.64. Therefore,we fail reject the null hypothesis being $\mu = 580$.
+As we can notice above, the absolute value of z-calculated = 1 is less than the absolute value of z-critical = 1.64. Therefore,we fail reject the null hypothesis being $\mu = 580$.
 
 
 ### Problem - 4
