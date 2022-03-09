@@ -253,16 +253,18 @@ $$salary = \beta_{0} + \beta_{1} roe + u$$
 
 The slope parameter $\beta_{1}$ measure the change in annual salary when the return on equity increases by one percentage point. Since, a higher *roe* is good for the company, we expect $\beta_{1}$ to be positive.
 
-Always start with looking at the summary statistics of your data. It is helpful to get the feel of the data before we start our analysis.
-
-```{r echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
+```{r summary table,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
 load("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\ceosal1.RData")
 ceo1 <- data
 
 ## Summary Statistics
 
 stargazer(ceo1, type = "html",digits = 2)
+```
 
+Always start with looking at the summary statistics of your data. It is helpful to get the feel of the data before we start our analysis.The data set **CEOSAL1** contains information on 209 CEOs for the year 1990; these data were obtained from Business Week (5/6/91). In this sample, the average annual salary is \$1,281,120, with the smallest and largest being \$223,000 and $14,822,000, respectively. The average return on equity for the years 1988, 1989, and 1990 is 17.18%, with the smallest and largest values being 0.5% and 56.3%, respectively.
+
+```{r data plot,echo=TRUE, warning=FALSE, message=FALSE}
 ## plot the data 
 p1 <- ggplot(data = ceo1, aes(x = roe, y = salary)) +
   geom_point()+
@@ -270,21 +272,35 @@ p1 <- ggplot(data = ceo1, aes(x = roe, y = salary)) +
   xlab("Return on Equity")+
   ylab("Salary")
 
-p2 <- ggplot(data = ceo1, aes(x = roe, y = lsalary)) +
+p2 <- ggplot(data = ceo1, aes(x = roe, y = lsalary)) +  ## Just for your reference
   geom_point()+
   geom_smooth(method = "lm")+
   xlab("Return on Equity")+
   ylab("Log Salary")
 
 gridExtra::grid.arrange(p1,p2)
-
-model_1 <- lm(data = ceo1, salary ~ roe)
-stargazer(model_1, type = "html",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
-
-
 
 We have the results after fitting the model. Out fitted model looks like this
 
 $$\widehat{salary} = 963.191 + 18.501 roe$$
+```{r regression,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
+model_1 <- lm(data = ceo1, salary ~ roe)
+stargazer(model_1, type = "html",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+where the intercept and slope estimates have been rounded to three decimal places; we use “salary hat” to indicate that this is an estimated equation. 
+
+**How do we interpret the equation?**
+
+First, if the return on equity is zero, roe = 0, then the predicted salary is the intercept, 963.191, which equals $963,191
+because salary is measured in thousands. Next, we can write the predicted change in salary as a function
+of the change in roe: $\widehat{\Delta salary} = 18.501 (\Delta roe)$. This means that if the return on equity increases by one percentage point, $(\Delta roe) = 1$ , then salary is predicted to change by about 18.5, or $18,500.
+
+Because it is a linear equation, this is the estimated change regardless of the initial salary.
+
+
+**Question** :  What is the predicted salary of a CEO if the return on equity is 30 percent?
+
+We can use our fitted model, $\widehat{salary},  = 963.191 + 18.501 roe$. Plug in the value of roe = 30. i.e. $\widehat{salary} = 963.191 + 18.501 (30) = 1,518,221$, which is over \$1.5 million dollars. This is the predicted value that our model gives us. Now, keep in mind as we talked about it in the class, the assumption of zero conditional mean does not satisfy in this case. There are other variables that potentially affect the salary of a CEO. 
 

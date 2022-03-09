@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-03-07"
+date: "2022-03-09"
 output: 
   html_document: 
     toc: yes
@@ -323,8 +323,6 @@ $$salary = \beta_{0} + \beta_{1} roe + u$$
 
 The slope parameter $\beta_{1}$ measure the change in annual salary when the return on equity increases by one percentage point. Since, a higher *roe* is good for the company, we expect $\beta_{1}$ to be positive.
 
-Always start with looking at the summary statistics of your data. It is helpful to get the feel of the data before we start our analysis.
-
 
 ```r
 load("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\ceosal1.RData")
@@ -351,6 +349,9 @@ stargazer(ceo1, type = "html",digits = 2)
 <tr><td style="text-align:left">lsales</td><td>209</td><td>8.29</td><td>1.01</td><td>5.17</td><td>11.49</td></tr>
 <tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr></table>
 
+Always start with looking at the summary statistics of your data. It is helpful to get the feel of the data before we start our analysis.The data set **CEOSAL1** contains information on 209 CEOs for the year 1990; these data were obtained from Business Week (5/6/91). In this sample, the average annual salary is \$1,281,120, with the smallest and largest being \$223,000 and $14,822,000, respectively. The average return on equity for the years 1988, 1989, and 1990 is 17.18%, with the smallest and largest values being 0.5% and 56.3%, respectively.
+
+
 ```r
 ## plot the data 
 p1 <- ggplot(data = ceo1, aes(x = roe, y = salary)) +
@@ -359,7 +360,7 @@ p1 <- ggplot(data = ceo1, aes(x = roe, y = salary)) +
   xlab("Return on Equity")+
   ylab("Salary")
 
-p2 <- ggplot(data = ceo1, aes(x = roe, y = lsalary)) +
+p2 <- ggplot(data = ceo1, aes(x = roe, y = lsalary)) +  ## Just for your reference
   geom_point()+
   geom_smooth(method = "lm")+
   xlab("Return on Equity")+
@@ -368,7 +369,11 @@ p2 <- ggplot(data = ceo1, aes(x = roe, y = lsalary)) +
 gridExtra::grid.arrange(p1,p2)
 ```
 
-![](Example_Codes_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](Example_Codes_files/figure-html/data plot-1.png)<!-- -->
+
+We have the results after fitting the model. Out fitted model looks like this
+
+$$\widehat{salary} = 963.191 + 18.501 roe$$
 
 ```r
 model_1 <- lm(data = ceo1, salary ~ roe)
@@ -393,9 +398,18 @@ stargazer(model_1, type = "html",notes.append = FALSE,notes = c("<sup>&sstarf;</
 <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
+where the intercept and slope estimates have been rounded to three decimal places; we use “salary hat” to indicate that this is an estimated equation. 
+
+**How do we interpret the equation?**
+
+First, if the return on equity is zero, roe = 0, then the predicted salary is the intercept, 963.191, which equals $963,191
+because salary is measured in thousands. Next, we can write the predicted change in salary as a function
+of the change in roe: $\widehat{\Delta salary} = 18.501 (\Delta roe)$. This means that if the return on equity increases by one percentage point, $(\Delta roe) = 1$ , then salary is predicted to change by about 18.5, or $18,500.
+
+Because it is a linear equation, this is the estimated change regardless of the initial salary.
 
 
-We have the results after fitting the model. Out fitted model looks like this
+**Question** :  What is the predicted salary of a CEO if the return on equity is 30 percent?
 
-$$\widehat{salary} = 963.191 + 18.501 roe$$
+We can use our fitted model, $\widehat{salary},  = 963.191 + 18.501 roe$. Plug in the value of roe = 30. i.e. $\widehat{salary} = 963.191 + 18.501 (30) = 1,518,221$, which is over \$1.5 million dollars. This is the predicted value that our model gives us. Now, keep in mind as we talked about it in the class, the assumption of zero conditional mean does not satisfy in this case. There are other variables that potentially affect the salary of a CEO. 
 
