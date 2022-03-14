@@ -285,8 +285,9 @@ We have the results after fitting the model. Out fitted model looks like this
 
 $$\widehat{salary} = 963.191 + 18.501 roe$$
 ```{r regression,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
-model_1 <- lm(data = ceo1, salary ~ roe)
-stargazer(model_1, type = "html",dep.var.labels   = "Salary", title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+model_1 <- lm(data = ceo1, salary ~ roe) # level - level
+model_2 <- lm(data = ceo1, lsalary ~ roe) # log-level
+stargazer(model_1,model_2, type = "html",dep.var.labels = c("Salary","Log Salary"), title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
 where the intercept and slope estimates have been rounded to three decimal places; we use “salary hat” to indicate that this is an estimated equation. 

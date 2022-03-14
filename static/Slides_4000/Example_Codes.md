@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-03-09"
+date: "2022-03-14"
 output: 
   html_document: 
     toc: yes
@@ -377,25 +377,27 @@ We have the results after fitting the model. Out fitted model looks like this
 $$\widehat{salary} = 963.191 + 18.501 roe$$
 
 ```r
-model_1 <- lm(data = ceo1, salary ~ roe)
-stargazer(model_1, type = "html",dep.var.labels   = "Salary", title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+model_1 <- lm(data = ceo1, salary ~ roe) # level - level
+model_2 <- lm(data = ceo1, lsalary ~ roe) # log-level
+stargazer(model_1,model_2, type = "html",dep.var.labels = c("Salary","Log Salary"), title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
 
 <table style="text-align:center"><caption><strong>CEO Salary and Return on Equity</strong></caption>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>Salary</td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">roe</td><td>18.501<sup>*</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(11.123)</td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>963.191<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(213.240)</td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left"><em>N</em></td><td>209</td></tr>
-<tr><td style="text-align:left">R<sup>2</sup></td><td>0.013</td></tr>
-<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.008</td></tr>
-<tr><td style="text-align:left">Residual Std. Error</td><td>1,366.555 (df = 207)</td></tr>
-<tr><td style="text-align:left">F Statistic</td><td>2.767<sup>*</sup> (df = 1; 207)</td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>Salary</td><td>Log Salary</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">roe</td><td>18.501<sup>*</sup></td><td>0.014<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(11.123)</td><td>(0.005)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>963.191<sup>***</sup></td><td>6.712<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(213.240)</td><td>(0.087)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>209</td><td>209</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.013</td><td>0.043</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.008</td><td>0.039</td></tr>
+<tr><td style="text-align:left">Residual Std. Error (df = 207)</td><td>1,366.555</td><td>0.555</td></tr>
+<tr><td style="text-align:left">F Statistic (df = 1; 207)</td><td>2.767<sup>*</sup></td><td>9.408<sup>***</sup></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="2" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
 where the intercept and slope estimates have been rounded to three decimal places; we use “salary hat” to indicate that this is an estimated equation. 
