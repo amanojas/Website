@@ -305,3 +305,12 @@ Because it is a linear equation, this is the estimated change regardless of the 
 
 We can use our fitted model, $\widehat{salary},  = 963.191 + 18.501 roe$. Plug in the value of roe = 30. i.e. $\widehat{salary} = 963.191 + 18.501 (30) = 1,518,221$, which is over \$1.5 million dollars. This is the predicted value that our model gives us. Now, keep in mind as we talked about it in the class, the assumption of zero conditional mean does not satisfy in this case. There are other variables that could potentially affect the salary of a CEO. 
 
+
+```{r logregression,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
+ceo1 <- ceo1%>%
+  mutate(lroe = log(roe))
+model_3 <- lm(data = ceo1, salary ~ lroe) # level-log
+model_4 <- lm(data = ceo1, lsalary ~ roe) # log-level
+model_5 <- lm(data = ceo1, lsalary ~ lroe) # log-log
+stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Log Salary","Log Salary"), title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```

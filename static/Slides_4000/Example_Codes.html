@@ -1017,6 +1017,235 @@ F Statistic (df = 1; 207)
 <p>Because it is a linear equation, this is the estimated change regardless of the initial salary.</p>
 <p><strong>Question</strong> : What is the predicted salary of a CEO if the return on equity is 30 percent?</p>
 <p>We can use our fitted model, <span class="math inline">\(\widehat{salary}, = 963.191 + 18.501 roe\)</span>. Plug in the value of roe = 30. i.e. <span class="math inline">\(\widehat{salary} = 963.191 + 18.501 (30) = 1,518,221\)</span>, which is over $1.5 million dollars. This is the predicted value that our model gives us. Now, keep in mind as we talked about it in the class, the assumption of zero conditional mean does not satisfy in this case. There are other variables that could potentially affect the salary of a CEO.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>ceo1 <span class="ot">&lt;-</span> ceo1<span class="sc">%&gt;%</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">lroe =</span> <span class="fu">log</span>(roe))</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>model_3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> ceo1, salary <span class="sc">~</span> lroe) <span class="co"># level-log</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>model_4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> ceo1, lsalary <span class="sc">~</span> roe) <span class="co"># log-level</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>model_5 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> ceo1, lsalary <span class="sc">~</span> lroe) <span class="co"># log-log</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(model_3,model_4, model_5,<span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">dep.var.labels =</span> <span class="fu">c</span>(<span class="st">&quot;Salary&quot;</span>,<span class="st">&quot;Log Salary&quot;</span>,<span class="st">&quot;Log Salary&quot;</span>), <span class="at">title =</span> <span class="st">&quot;CEO Salary and Return on Equity&quot;</span>, <span class="at">style =</span> <span class="st">&quot;qje&quot;</span>,<span class="at">notes.append =</span> <span class="cn">FALSE</span>,<span class="at">notes =</span> <span class="fu">c</span>(<span class="st">&quot;&lt;sup&gt;&amp;sstarf;&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.01&quot;</span>))</span></code></pre></div>
+<table style="text-align:center">
+<caption>
+<strong>CEO Salary and Return on Equity</strong>
+</caption>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+Salary
+</td>
+<td colspan="2">
+Log Salary
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+<td>
+(3)
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+lroe
+</td>
+<td>
+255.311
+</td>
+<td>
+</td>
+<td>
+0.170<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(173.884)
+</td>
+<td>
+</td>
+<td>
+(0.071)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+roe
+</td>
+<td>
+</td>
+<td>
+0.014<sup>***</sup>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+(0.005)
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+586.596
+</td>
+<td>
+6.712<sup>***</sup>
+</td>
+<td>
+6.489<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(482.396)
+</td>
+<td>
+(0.087)
+</td>
+<td>
+(0.197)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>N</em>
+</td>
+<td>
+209
+</td>
+<td>
+209
+</td>
+<td>
+209
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.010
+</td>
+<td>
+0.043
+</td>
+<td>
+0.027
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.006
+</td>
+<td>
+0.039
+</td>
+<td>
+0.022
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error (df = 207)
+</td>
+<td>
+1,368.548
+</td>
+<td>
+0.555
+</td>
+<td>
+0.560
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic (df = 1; 207)
+</td>
+<td>
+2.156
+</td>
+<td>
+9.408<sup>***</sup>
+</td>
+<td>
+5.689<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Notes:</em>
+</td>
+<td colspan="3" style="text-align:right">
+<sup>⋆</sup>p&lt;0.1; <sup>⋆⋆</sup>p&lt;0.05; <sup>⋆⋆⋆</sup>p&lt;0.01
+</td>
+</tr>
+</table>
 </div>
 
 

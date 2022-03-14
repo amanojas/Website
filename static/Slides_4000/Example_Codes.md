@@ -415,3 +415,34 @@ Because it is a linear equation, this is the estimated change regardless of the 
 
 We can use our fitted model, $\widehat{salary},  = 963.191 + 18.501 roe$. Plug in the value of roe = 30. i.e. $\widehat{salary} = 963.191 + 18.501 (30) = 1,518,221$, which is over \$1.5 million dollars. This is the predicted value that our model gives us. Now, keep in mind as we talked about it in the class, the assumption of zero conditional mean does not satisfy in this case. There are other variables that could potentially affect the salary of a CEO. 
 
+
+
+```r
+ceo1 <- ceo1%>%
+  mutate(lroe = log(roe))
+model_3 <- lm(data = ceo1, salary ~ lroe) # level-log
+model_4 <- lm(data = ceo1, lsalary ~ roe) # log-level
+model_5 <- lm(data = ceo1, lsalary ~ lroe) # log-log
+stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Log Salary","Log Salary"), title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+<table style="text-align:center"><caption><strong>CEO Salary and Return on Equity</strong></caption>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>Salary</td><td colspan="2">Log Salary</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">lroe</td><td>255.311</td><td></td><td>0.170<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(173.884)</td><td></td><td>(0.071)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">roe</td><td></td><td>0.014<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.005)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>586.596</td><td>6.712<sup>***</sup></td><td>6.489<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(482.396)</td><td>(0.087)</td><td>(0.197)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>209</td><td>209</td><td>209</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.010</td><td>0.043</td><td>0.027</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.006</td><td>0.039</td><td>0.022</td></tr>
+<tr><td style="text-align:left">Residual Std. Error (df = 207)</td><td>1,368.548</td><td>0.555</td><td>0.560</td></tr>
+<tr><td style="text-align:left">F Statistic (df = 1; 207)</td><td>2.156</td><td>9.408<sup>***</sup></td><td>5.689<sup>**</sup></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="3" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+</table>
