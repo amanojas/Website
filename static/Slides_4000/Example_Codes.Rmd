@@ -315,7 +315,7 @@ model_5 <- lm(data = ceo1, lsalary ~ lroe) # log-log
 stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Log Salary","Log Salary"), title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
-**E2 Analysis of Wage and Education Data, (1976 CPS)**
+**E2. Analysis of Wage and Education Data, (1976 CPS)**
 ```{r wage1 summary table,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
 ## Summary Statistics
 

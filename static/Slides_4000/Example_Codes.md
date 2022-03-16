@@ -447,7 +447,7 @@ stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Lo
 <tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="3" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
-**E2 Analysis of Wage and Education Data, (1976 CPS)**
+**E2. Analysis of Wage and Education Data, (1976 CPS)**
 
 ```r
 ## Summary Statistics
