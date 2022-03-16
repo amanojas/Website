@@ -314,3 +314,51 @@ model_4 <- lm(data = ceo1, lsalary ~ roe) # log-level
 model_5 <- lm(data = ceo1, lsalary ~ lroe) # log-log
 stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Log Salary","Log Salary"), title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
+
+**E2**
+
+```{r wage1 summary table,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
+## Summary Statistics
+
+stargazer(wage1, type = "html",digits = 2, title = "Descriptive Statistics")
+```
+
+
+
+```{r wage1 data plot,echo=TRUE, warning=FALSE, message=FALSE}
+### Wage-Education
+w1 <- ggplot(data = wage1, aes(x = educ, y = wage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years of Education")+
+  ylab("Hourly Wage")+
+  labs(title = "Wages vs Education, 1976")
+
+w2 <- ggplot(data = wage1, aes(x = educ, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years of Education")+
+  ylab("Hourly Wage(in log terms)")+
+  labs(title = "Wages vs Education, 1976")
+
+gridExtra::grid.arrange(w1,w2)
+```
+
+
+
+```{r wage 1 regression,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
+## Regression Analysis
+wmodel_1 <- lm(data = wage1, wage ~ educ)
+wmodel_2 <- lm(data = wage1, lwage ~ educ)
+
+wage1 = wage1%>%
+  filter(educ != 0)%>%
+  mutate(leduc = log(educ))
+wmodel_3 <- lm(data = wage1, wage ~ leduc)
+wmodel_4 <- lm(data = wage1, lwage ~ leduc)
+stargazer(wmodel_1, wmodel_2,wmodel_3,wmodel_4,type = "html",dep.var.labels = c("wage","log wage","wage","log wage"), title = "Wage and Education", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+
+

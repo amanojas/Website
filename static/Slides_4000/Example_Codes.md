@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-03-14"
+date: "2022-03-16"
 output: 
   html_document: 
     toc: yes
@@ -446,3 +446,106 @@ stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Lo
 <tr><td style="text-align:left">F Statistic (df = 1; 207)</td><td>2.156</td><td>9.408<sup>***</sup></td><td>5.689<sup>**</sup></td></tr>
 <tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="3" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
+
+**E2**
+
+
+```r
+## Summary Statistics
+
+stargazer(wage1, type = "html",digits = 2, title = "Descriptive Statistics")
+```
+
+
+<table style="text-align:center"><caption><strong>Descriptive Statistics</strong></caption>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Statistic</td><td>N</td><td>Mean</td><td>St. Dev.</td><td>Min</td><td>Max</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">wage</td><td>526</td><td>5.90</td><td>3.69</td><td>0.53</td><td>24.98</td></tr>
+<tr><td style="text-align:left">educ</td><td>526</td><td>12.56</td><td>2.77</td><td>0</td><td>18</td></tr>
+<tr><td style="text-align:left">exper</td><td>526</td><td>17.02</td><td>13.57</td><td>1</td><td>51</td></tr>
+<tr><td style="text-align:left">tenure</td><td>526</td><td>5.10</td><td>7.22</td><td>0</td><td>44</td></tr>
+<tr><td style="text-align:left">nonwhite</td><td>526</td><td>0.10</td><td>0.30</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">female</td><td>526</td><td>0.48</td><td>0.50</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">married</td><td>526</td><td>0.61</td><td>0.49</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">numdep</td><td>526</td><td>1.04</td><td>1.26</td><td>0</td><td>6</td></tr>
+<tr><td style="text-align:left">smsa</td><td>526</td><td>0.72</td><td>0.45</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">northcen</td><td>526</td><td>0.25</td><td>0.43</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">south</td><td>526</td><td>0.36</td><td>0.48</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">west</td><td>526</td><td>0.17</td><td>0.38</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">construc</td><td>526</td><td>0.05</td><td>0.21</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">ndurman</td><td>526</td><td>0.11</td><td>0.32</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">trcommpu</td><td>526</td><td>0.04</td><td>0.20</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">trade</td><td>526</td><td>0.29</td><td>0.45</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">services</td><td>526</td><td>0.10</td><td>0.30</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">profserv</td><td>526</td><td>0.26</td><td>0.44</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">profocc</td><td>526</td><td>0.37</td><td>0.48</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">clerocc</td><td>526</td><td>0.17</td><td>0.37</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">servocc</td><td>526</td><td>0.14</td><td>0.35</td><td>0</td><td>1</td></tr>
+<tr><td style="text-align:left">lwage</td><td>526</td><td>1.62</td><td>0.53</td><td>-0.63</td><td>3.22</td></tr>
+<tr><td style="text-align:left">expersq</td><td>526</td><td>473.44</td><td>616.04</td><td>1</td><td>2,601</td></tr>
+<tr><td style="text-align:left">tenursq</td><td>526</td><td>78.15</td><td>199.43</td><td>0</td><td>1,936</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr></table>
+
+
+
+
+```r
+### Wage-Education
+w1 <- ggplot(data = wage1, aes(x = educ, y = wage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years of Education")+
+  ylab("Hourly Wage")+
+  labs(title = "Wages vs Education, 1976")
+
+w2 <- ggplot(data = wage1, aes(x = educ, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years of Education")+
+  ylab("Hourly Wage(in log terms)")+
+  labs(title = "Wages vs Education, 1976")
+
+gridExtra::grid.arrange(w1,w2)
+```
+
+![](Example_Codes_files/figure-html/wage1 data plot-1.png)<!-- -->
+
+
+
+
+```r
+## Regression Analysis
+wmodel_1 <- lm(data = wage1, wage ~ educ)
+wmodel_2 <- lm(data = wage1, lwage ~ educ)
+
+wage1 = wage1%>%
+  filter(educ != 0)%>%
+  mutate(leduc = log(educ))
+wmodel_3 <- lm(data = wage1, wage ~ leduc)
+wmodel_4 <- lm(data = wage1, lwage ~ leduc)
+stargazer(wmodel_1, wmodel_2,wmodel_3,wmodel_4,type = "html",dep.var.labels = c("wage","log wage","wage","log wage"), title = "Wage and Education", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+<table style="text-align:center"><caption><strong>Wage and Education</strong></caption>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>wage</td><td>log wage</td><td>wage</td><td>log wage</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">educ</td><td>0.541<sup>***</sup></td><td>0.083<sup>***</sup></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.053)</td><td>(0.008)</td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">leduc</td><td></td><td></td><td>5.330<sup>***</sup></td><td>0.825<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.608)</td><td>(0.086)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-0.905</td><td>0.584<sup>***</sup></td><td>-7.460<sup>***</sup></td><td>-0.445<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.685)</td><td>(0.097)</td><td>(1.532)</td><td>(0.218)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>526</td><td>526</td><td>524</td><td>524</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.165</td><td>0.186</td><td>0.128</td><td>0.149</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.163</td><td>0.184</td><td>0.127</td><td>0.147</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>3.378 (df = 524)</td><td>0.480 (df = 524)</td><td>3.455 (df = 522)</td><td>0.491 (df = 522)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>103.363<sup>***</sup> (df = 1; 524)</td><td>119.582<sup>***</sup> (df = 1; 524)</td><td>76.849<sup>***</sup> (df = 1; 522)</td><td>91.119<sup>***</sup> (df = 1; 522)</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="4" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+</table>
+
+
+
+
