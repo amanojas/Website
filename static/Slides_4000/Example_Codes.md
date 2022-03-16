@@ -447,8 +447,7 @@ stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Lo
 <tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="3" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
-**E2**
-
+**E2 Analysis of Wage and Education Data, (1976 CPS)**
 
 ```r
 ## Summary Statistics
@@ -547,5 +546,16 @@ stargazer(wmodel_1, wmodel_2,wmodel_3,wmodel_4,type = "html",dep.var.labels = c(
 </table>
 
 
+
+**E3. Suppose a random sample of 100 20-year-old men is selected from a population and that these men’s height and weight are recorded. A regression of weight on height yields**
+
+$$\widehat{Weight} = \underset{(2.15)}{-99.41} + \underset{(0.31)}{3.94} Height, R^{2} = 0.81, SER = 10.2$$
+where $\widehat{Weight}$ is measured in pounds and $Height$ is measured in inches. 1 in = 2.54 cm, 1 *lb* = 0.4536 kg.
+
+a. What is the regression’s weight prediction for someone who is (i) 70 in. tall, (ii) 65 in. tall, (iii) 74 in. tall?
+
+b. A man has a late growth spurt and grows 2 in. over the course of a year. What is the regression’s prediction for the increase in this man’s weight?
+
+c. Suppose, that instead of measuring Weight and Height in pounds and inches, these variables are measured in centimeters and kilograms. What are the regression estimates from this new centimeter-kilogram regression? (Give all results, estimated coefficients, $R^{2}$, and SER.)
 
 
