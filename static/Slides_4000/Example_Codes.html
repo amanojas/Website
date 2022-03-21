@@ -1246,7 +1246,10 @@ F Statistic (df = 1; 207)
 </td>
 </tr>
 </table>
-<p><strong>E2. Analysis of Wage and Education Data, (1976 CPS)</strong></p>
+</div>
+<div id="simple-linear-regression-with-logarithms-result-interpretation" class="section level2">
+<h2>Simple Linear Regression with Logarithms Result Interpretation</h2>
+<p><strong>Analysis of Wage and Education Data, (1976 CPS)</strong></p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Summary Statistics</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(wage1, <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">digits =</span> <span class="dv">2</span>, <span class="at">title =</span> <span class="st">&quot;Descriptive Statistics&quot;</span>)</span></code></pre></div>
@@ -2066,7 +2069,7 @@ F Statistic
 <ul>
 <li><p>In regression 1, <strong>1 year</strong> increase in education is associated with <strong>$0.541</strong> increase in hourly wage.</p></li>
 <li><p>In regression 2, an increase in education by <strong>1 year</strong> is associated with <span class="math inline">\(100 \times \hat{\beta_{1}}\)</span> = 100 x 0.083 = <strong>8.3 %</strong> increase in hourly wage.</p></li>
-<li><p>In regression 3, <strong>1 %</strong> increase in education is associated with <span class="math inline">\(\frac{1}{100} \times \hat{\beta_{1}}\)</span> = $  $ = <strong>$ 0.0533</strong> increase in hourly wage.</p></li>
+<li><p>In regression 3, <strong>1 %</strong> increase in education is associated with <span class="math inline">\(\frac{1}{100} \times \hat{\beta_{1}}\)</span> = <span class="math inline">\(\frac{1}{100} \times 5.33\)</span> = <strong>$ 0.0533</strong> increase in hourly wage.</p></li>
 <li><p>In regression 4, <strong>1 %</strong> increase in education is associated with <span class="math inline">\(\hat{\beta_{1}}\)</span> % = <strong>0.83 %</strong> increase in hourly wage. (This gives us Elasticity! Recall from your economics class.)</p></li>
 </ul>
 <p>We can not compare <span class="math inline">\(R^{2}\)</span> values when the dependent variables are different. For instance, in the table above, we are not able to compare regression 1 and 2 since the dependent variables are wage and log(wage) respectively. In these situations we rely on our knowledge of economic theory and make decisions based on that. For example, it is standard practice to have a regression model like regression 2 in labor economics.</p>

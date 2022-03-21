@@ -447,7 +447,10 @@ stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Lo
 <tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="3" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
-**E2. Analysis of Wage and Education Data, (1976 CPS)**
+## Simple Linear Regression with Logarithms Result Interpretation 
+
+**Analysis of Wage and Education Data, (1976 CPS)**
+
 
 ```r
 ## Summary Statistics
@@ -550,17 +553,12 @@ stargazer(wmodel_1, wmodel_2,wmodel_3,wmodel_4,type = "html",dep.var.labels = c(
 
 - In regression 2, an increase in education by **1 year** is associated with $100 \times \hat{\beta_{1}}$ = 100 x 0.083 = **8.3 %** increase in hourly wage.
 
-- In regression 3, **1 %** increase in education is associated with $\frac{1}{100} \times \hat{\beta_{1}}$ = $\frac{1}{100} \times 5.33  $ = **$ 0.0533** increase in hourly wage.
+- In regression 3, **1 %** increase in education is associated with $\frac{1}{100} \times \hat{\beta_{1}}$ = $\frac{1}{100} \times 5.33$ = **$ 0.0533** increase in hourly wage.
 
 - In regression 4, **1 %** increase in education is associated with $\hat{\beta_{1}}$ %  = **0.83 %** increase in hourly wage. (This gives us Elasticity! Recall from your economics class.)
 
 
 We can not compare $R^{2}$ values when the dependent variables are different. For instance, in the table above, we are not able to compare regression 1 and 2 since the dependent variables are wage and log(wage) respectively. In these situations we rely on our knowledge of economic theory and make decisions based on that. For example, it is standard practice to have a regression model like regression 2 in labor economics. 
-
-
-
-
-
 
 
 
