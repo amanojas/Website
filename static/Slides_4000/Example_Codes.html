@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2022-03-16" />
+<meta name="date" content="2022-03-21" />
 
 <title>Example Codes</title>
 
@@ -324,7 +324,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Example Codes</h1>
 <h4 class="author"></h4>
-<h4 class="date">2022-03-16</h4>
+<h4 class="date">2022-03-21</h4>
 
 </div>
 
@@ -2063,6 +2063,13 @@ F Statistic
 </td>
 </tr>
 </table>
+<ul>
+<li><p>In regression 1, <strong>1 year</strong> increase in education is associated with <strong>$0.541</strong> increase in hourly wage.</p></li>
+<li><p>In regression 2, an increase in education by <strong>1 year</strong> is associated with <span class="math inline">\(100 \times \hat{\beta_{1}}\)</span> = 100 x 0.083 = <strong>8.3 %</strong> increase in hourly wage.</p></li>
+<li><p>In regression 3, <strong>1 %</strong> increase in education is associated with <span class="math inline">\(\frac{1}{100} \times \hat{\beta_{1}}\)</span> = $  $ = <strong>$ 0.0533</strong> increase in hourly wage.</p></li>
+<li><p>In regression 4, <strong>1 %</strong> increase in education is associated with <span class="math inline">\(\hat{\beta_{1}}\)</span> % = <strong>0.83 %</strong> increase in hourly wage. (This gives us Elasticity! Recall from your economics class.)</p></li>
+</ul>
+<p>We can not compare <span class="math inline">\(R^{2}\)</span> values when the dependent variables are different. For instance, in the table above, we are not able to compare regression 1 and 2 since the dependent variables are wage and log(wage) respectively. In these situations we rely on our knowledge of economic theory and make decisions based on that. For example, it is standard practice to have a regression model like regression 2 in labor economics.</p>
 <p><strong>E3. Suppose a random sample of 100 20-year-old men is selected from a population and that these men’s height and weight are recorded. A regression of weight on height yields</strong></p>
 <p><span class="math display">\[\widehat{Weight} = \underset{(2.15)}{-99.41} + \underset{(0.31)}{3.94} Height, R^{2} = 0.81, SER = 10.2\]</span> where <span class="math inline">\(\widehat{Weight}\)</span> is measured in pounds and <span class="math inline">\(Height\)</span> is measured in inches. 1 in = 2.54 cm, 1 <em>lb</em> = 0.4536 kg.</p>
 <ol style="list-style-type: lower-alpha">
