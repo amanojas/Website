@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-03-21"
+date: "2022-03-23"
 output: 
   html_document: 
     toc: yes
@@ -311,7 +311,7 @@ ggplot(data = coeffs, aes(x = b_1), color = "blue")+
 
 ![](Example_Codes_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
-## Simple Linear Regression Result Interpretation 
+## Simple Linear Regression : Results Interpretation 
 
 For this exercise we will require to install r package "wooldridge". This package contains all the data that are used in [Wooldridge's Introductory Econometrics](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/9781305270107/) textbook. We will use those data sets for our purpose.
 
@@ -447,7 +447,7 @@ stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Lo
 <tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="3" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
-## Simple Linear Regression with Logarithms Result Interpretation 
+## Simple Linear Regression with Logarithms : Results Interpretation 
 
 **Analysis of Wage and Education Data, (1976 CPS)**
 
@@ -560,9 +560,85 @@ stargazer(wmodel_1, wmodel_2,wmodel_3,wmodel_4,type = "html",dep.var.labels = c(
 
 We can not compare $R^{2}$ values when the dependent variables are different. For instance, in the table above, we are not able to compare regression 1 and 2 since the dependent variables are wage and log(wage) respectively. In these situations we rely on our knowledge of economic theory and make decisions based on that. For example, it is standard practice to have a regression model like regression 2 in labor economics. 
 
+## Multiple Regression Analysis : Results Interpretation
+
+
+```r
+m1 <- ggplot(data = wage1, aes(x = educ, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years of Education")+
+  ylab("Hourly Wage")+
+  labs(title = "Wages vs Education, 1976")
+
+m2 <- ggplot(data = wage1, aes(x = exper, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years of Experience")+
+  ylab("Hourly Wage)")+
+  labs(title = "Wages vs Experience, 1976")
+
+m3 <- ggplot(data = wage1, aes(x = tenure, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years with Employer")+
+  ylab("Hourly Wage)")+
+  labs(title = "Wages vs Tenure, 1976")
+
+m4 <- ggplot(data = wage1, aes(x = married, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Marital Status")+
+  ylab("Hourly Wage)")+
+  labs(title = "Wages vs Marital Status, 1976")
+
+gridExtra::grid.arrange(m1,m2,m3,m4)
+```
+
+![](Example_Codes_files/figure-html/wage1_multiple linear regression data plot-1.png)<!-- -->
 
 
 
+
+```r
+## Regression Analysis
+multiple_1 <- lm(data = wage1, wage ~ educ)
+multiple_2 <- lm(data = wage1, lwage ~ educ)
+multiple_3 <- lm(data = wage1, lwage ~ educ + exper)
+multiple_4 <- lm(data = wage1, lwage ~ educ + exper + tenure)
+multiple_5 <- lm(data = wage1, lwage ~ educ + exper + tenure + married)
+stargazer(multiple_1, multiple_2,multiple_3,multiple_4,multiple_5,type = "html",dep.var.labels = c("wage","log wage"), title = "Wage and Education", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+<table style="text-align:center"><caption><strong>Wage and Education</strong></caption>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>wage</td><td colspan="4">log wage</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">educ</td><td>0.572<sup>***</sup></td><td>0.087<sup>***</sup></td><td>0.103<sup>***</sup></td><td>0.097<sup>***</sup></td><td>0.092<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.055)</td><td>(0.008)</td><td>(0.008)</td><td>(0.008)</td><td>(0.008)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">exper</td><td></td><td></td><td>0.010<sup>***</sup></td><td>0.004<sup>**</sup></td><td>0.002</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.002)</td><td>(0.002)</td><td>(0.002)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">tenure</td><td></td><td></td><td></td><td>0.022<sup>***</sup></td><td>0.021<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td>(0.003)</td><td>(0.003)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">married</td><td></td><td></td><td></td><td></td><td>0.167<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.042)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-1.302<sup>*</sup></td><td>0.525<sup>***</sup></td><td>0.150</td><td>0.217<sup>**</sup></td><td>0.218<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.714)</td><td>(0.101)</td><td>(0.112)</td><td>(0.107)</td><td>(0.106)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>524</td><td>524</td><td>524</td><td>524</td><td>524</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.169</td><td>0.191</td><td>0.256</td><td>0.322</td><td>0.342</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.168</td><td>0.189</td><td>0.253</td><td>0.318</td><td>0.337</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>3.372 (df = 522)</td><td>0.479 (df = 522)</td><td>0.460 (df = 521)</td><td>0.439 (df = 520)</td><td>0.433 (df = 519)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>106.506<sup>***</sup> (df = 1; 522)</td><td>123.032<sup>***</sup> (df = 1; 522)</td><td>89.545<sup>***</sup> (df = 2; 521)</td><td>82.375<sup>***</sup> (df = 3; 520)</td><td>67.558<sup>***</sup> (df = 4; 519)</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="5" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+</table>
+
+
+<!--
 **E3. Suppose a random sample of 100 20-year-old men is selected from a population and that these men’s height and weight are recorded. A regression of weight on height yields**
 
 $$\widehat{Weight} = \underset{(2.15)}{-99.41} + \underset{(0.31)}{3.94} Height, R^{2} = 0.81, SER = 10.2$$
@@ -573,5 +649,5 @@ a. What is the regression’s weight prediction for someone who is (i) 70 in. ta
 b. A man has a late growth spurt and grows 2 in. over the course of a year. What is the regression’s prediction for the increase in this man’s weight?
 
 c. Suppose, that instead of measuring Weight and Height in pounds and inches, these variables are measured in centimeters and kilograms. What are the regression estimates from this new centimeter-kilogram regression? (Give all results, estimated coefficients, $R^{2}$, and SER.)
-
+-->
 

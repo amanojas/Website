@@ -241,7 +241,7 @@ ggplot(data = coeffs, aes(x = b_1), color = "blue")+
 
 ```
 
-## Simple Linear Regression Result Interpretation 
+## Simple Linear Regression : Results Interpretation 
 
 For this exercise we will require to install r package "wooldridge". This package contains all the data that are used in [Wooldridge's Introductory Econometrics](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/9781305270107/) textbook. We will use those data sets for our purpose.
 
@@ -315,7 +315,7 @@ model_5 <- lm(data = ceo1, lsalary ~ lroe) # log-log
 stargazer(model_3,model_4, model_5,type = "html",dep.var.labels = c("Salary","Log Salary","Log Salary"), title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
-## Simple Linear Regression with Logarithms Result Interpretation 
+## Simple Linear Regression with Logarithms : Results Interpretation 
 
 **Analysis of Wage and Education Data, (1976 CPS)**
 
@@ -373,9 +373,54 @@ stargazer(wmodel_1, wmodel_2,wmodel_3,wmodel_4,type = "html",dep.var.labels = c(
 
 We can not compare $R^{2}$ values when the dependent variables are different. For instance, in the table above, we are not able to compare regression 1 and 2 since the dependent variables are wage and log(wage) respectively. In these situations we rely on our knowledge of economic theory and make decisions based on that. For example, it is standard practice to have a regression model like regression 2 in labor economics. 
 
+## Multiple Regression Analysis : Results Interpretation
+
+```{r wage1_multiple linear regression data plot,echo=TRUE, warning=FALSE, message=FALSE}
+m1 <- ggplot(data = wage1, aes(x = educ, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years of Education")+
+  ylab("Hourly Wage")+
+  labs(title = "Wages vs Education, 1976")
+
+m2 <- ggplot(data = wage1, aes(x = exper, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years of Experience")+
+  ylab("Hourly Wage)")+
+  labs(title = "Wages vs Experience, 1976")
+
+m3 <- ggplot(data = wage1, aes(x = tenure, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Years with Employer")+
+  ylab("Hourly Wage)")+
+  labs(title = "Wages vs Tenure, 1976")
+
+m4 <- ggplot(data = wage1, aes(x = married, y = lwage)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  xlab("Marital Status")+
+  ylab("Hourly Wage)")+
+  labs(title = "Wages vs Marital Status, 1976")
+
+gridExtra::grid.arrange(m1,m2,m3,m4)
+```
 
 
 
+```{r wage 1  multiple regression,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
+## Regression Analysis
+multiple_1 <- lm(data = wage1, wage ~ educ)
+multiple_2 <- lm(data = wage1, lwage ~ educ)
+multiple_3 <- lm(data = wage1, lwage ~ educ + exper)
+multiple_4 <- lm(data = wage1, lwage ~ educ + exper + tenure)
+multiple_5 <- lm(data = wage1, lwage ~ educ + exper + tenure + married)
+stargazer(multiple_1, multiple_2,multiple_3,multiple_4,multiple_5,type = "html",dep.var.labels = c("wage","log wage"), title = "Wage and Education", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+<!--
 **E3. Suppose a random sample of 100 20-year-old men is selected from a population and that these men’s height and weight are recorded. A regression of weight on height yields**
 
 $$\widehat{Weight} = \underset{(2.15)}{-99.41} + \underset{(0.31)}{3.94} Height, R^{2} = 0.81, SER = 10.2$$
@@ -386,5 +431,5 @@ a. What is the regression’s weight prediction for someone who is (i) 70 in. ta
 b. A man has a late growth spurt and grows 2 in. over the course of a year. What is the regression’s prediction for the increase in this man’s weight?
 
 c. Suppose, that instead of measuring Weight and Height in pounds and inches, these variables are measured in centimeters and kilograms. What are the regression estimates from this new centimeter-kilogram regression? (Give all results, estimated coefficients, $R^{2}$, and SER.)
-
+-->
 
