@@ -34,6 +34,7 @@ output:
 
 ## Class Assignments
 
+- [Written Assignment](\Slides_4000\Written_Assignment_Spring_2022.pdf) (Due on April 13, 2022 before class)
 
 
 

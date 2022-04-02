@@ -36,7 +36,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Class Assignments
 
-- ![Written Assignment](\Slides_4000\Written_Assignment_Spring_2022.pdf) (Due on April 13, 2022 before class)
+- [Written Assignment](\Slides_4000\Written_Assignment_Spring_2022.pdf) (Due on April 13, 2022 before class)
 
 
 
