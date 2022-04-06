@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-03-23"
+date: "2022-04-06"
 output: 
   html_document: 
     toc: yes
@@ -637,17 +637,56 @@ stargazer(multiple_1, multiple_2,multiple_3,multiple_4,multiple_5,type = "html",
 <tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="5" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
+### Binary Independent Variables and Interaction Terms
 
-<!--
-**E3. Suppose a random sample of 100 20-year-old men is selected from a population and that these men’s height and weight are recorded. A regression of weight on height yields**
 
-$$\widehat{Weight} = \underset{(2.15)}{-99.41} + \underset{(0.31)}{3.94} Height, R^{2} = 0.81, SER = 10.2$$
-where $\widehat{Weight}$ is measured in pounds and $Height$ is measured in inches. 1 in = 2.54 cm, 1 *lb* = 0.4536 kg.
+```r
+## Regression Analysis
+mod_1 <- lm(data = wage1, lwage ~ female)
+mod_2 <- lm(data = wage1, lwage ~ female + educ)
+mod_3 <- lm(data = wage1, lwage ~ female + educ + exper)
+mod_4 <- lm(data = wage1, lwage ~ female + educ + exper + tenure)
+mod_5 <- lm(data = wage1, lwage ~ female + educ + exper + tenure + married)
+mod_6 <- lm(data = wage1, lwage ~ female + educ + exper + tenure + female*educ)
+mod_7 <- lm(data = wage1, lwage ~ female + educ + exper + tenure + female*educ + female*married)
+stargazer(mod_1, mod_2,mod_3,mod_4,mod_5,mod_6,mod_7,type = "html",dep.var.labels = c("log wage"), title = "Wage and Gender", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
 
-a. What is the regression’s weight prediction for someone who is (i) 70 in. tall, (ii) 65 in. tall, (iii) 74 in. tall?
 
-b. A man has a late growth spurt and grows 2 in. over the course of a year. What is the regression’s prediction for the increase in this man’s weight?
+<table style="text-align:center"><caption><strong>Wage and Gender</strong></caption>
+<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="7">log wage</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td><td>(7)</td></tr>
+<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">female</td><td>-0.396<sup>***</sup></td><td>-0.365<sup>***</sup></td><td>-0.348<sup>***</sup></td><td>-0.306<sup>***</sup></td><td>-0.290<sup>***</sup></td><td>-0.407<sup>**</sup></td><td>-0.252</td></tr>
+<tr><td style="text-align:left"></td><td>(0.043)</td><td>(0.039)</td><td>(0.037)</td><td>(0.037)</td><td>(0.037)</td><td>(0.186)</td><td>(0.184)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">educ</td><td></td><td>0.082<sup>***</sup></td><td>0.097<sup>***</sup></td><td>0.093<sup>***</sup></td><td>0.089<sup>***</sup></td><td>0.090<sup>***</sup></td><td>0.085<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.007)</td><td>(0.007)</td><td>(0.007)</td><td>(0.007)</td><td>(0.009)</td><td>(0.009)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">exper</td><td></td><td></td><td>0.010<sup>***</sup></td><td>0.005<sup>***</sup></td><td>0.003<sup>*</sup></td><td>0.005<sup>***</sup></td><td>0.003<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.001)</td><td>(0.002)</td><td>(0.002)</td><td>(0.002)</td><td>(0.002)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">tenure</td><td></td><td></td><td></td><td>0.017<sup>***</sup></td><td>0.017<sup>***</sup></td><td>0.017<sup>***</sup></td><td>0.015<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td>(0.003)</td><td>(0.003)</td><td>(0.003)</td><td>(0.003)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">married</td><td></td><td></td><td></td><td></td><td>0.125<sup>***</sup></td><td></td><td>0.291<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.040)</td><td></td><td>(0.055)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">female:educ</td><td></td><td></td><td></td><td></td><td></td><td>0.008</td><td>0.012</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.014)</td><td>(0.014)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">female:married</td><td></td><td></td><td></td><td></td><td></td><td></td><td>-0.317<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(0.074)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>1.814<sup>***</sup></td><td>0.759<sup>***</sup></td><td>0.407<sup>***</sup></td><td>0.428<sup>***</sup></td><td>0.418<sup>***</sup></td><td>0.464<sup>***</sup></td><td>0.369<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.030)</td><td>(0.097)</td><td>(0.107)</td><td>(0.104)</td><td>(0.103)</td><td>(0.122)</td><td>(0.121)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>524</td><td>524</td><td>524</td><td>524</td><td>524</td><td>524</td><td>524</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.138</td><td>0.308</td><td>0.362</td><td>0.401</td><td>0.412</td><td>0.401</td><td>0.433</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.137</td><td>0.305</td><td>0.358</td><td>0.396</td><td>0.406</td><td>0.395</td><td>0.425</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>0.494 (df = 522)</td><td>0.443 (df = 521)</td><td>0.426 (df = 520)</td><td>0.413 (df = 519)</td><td>0.410 (df = 518)</td><td>0.414 (df = 518)</td><td>0.403 (df = 516)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>83.868<sup>***</sup> (df = 1; 522)</td><td>115.919<sup>***</sup> (df = 2; 521)</td><td>98.193<sup>***</sup> (df = 3; 520)</td><td>86.774<sup>***</sup> (df = 4; 519)</td><td>72.579<sup>***</sup> (df = 5; 518)</td><td>69.388<sup>***</sup> (df = 5; 518)</td><td>56.191<sup>***</sup> (df = 7; 516)</td></tr>
+<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="7" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+</table>
 
-c. Suppose, that instead of measuring Weight and Height in pounds and inches, these variables are measured in centimeters and kilograms. What are the regression estimates from this new centimeter-kilogram regression? (Give all results, estimated coefficients, $R^{2}$, and SER.)
--->
+
 
