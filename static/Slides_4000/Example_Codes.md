@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-04-06"
+date: "2022-04-10"
 output: 
   html_document: 
     toc: yes
@@ -686,6 +686,36 @@ stargazer(mod_1, mod_2,mod_3,mod_4,mod_5,mod_6,mod_7,type = "html",dep.var.label
 <tr><td style="text-align:left">Residual Std. Error</td><td>0.494 (df = 522)</td><td>0.443 (df = 521)</td><td>0.426 (df = 520)</td><td>0.413 (df = 519)</td><td>0.410 (df = 518)</td><td>0.414 (df = 518)</td><td>0.403 (df = 516)</td></tr>
 <tr><td style="text-align:left">F Statistic</td><td>83.868<sup>***</sup> (df = 1; 522)</td><td>115.919<sup>***</sup> (df = 2; 521)</td><td>98.193<sup>***</sup> (df = 3; 520)</td><td>86.774<sup>***</sup> (df = 4; 519)</td><td>72.579<sup>***</sup> (df = 5; 518)</td><td>69.388<sup>***</sup> (df = 5; 518)</td><td>56.191<sup>***</sup> (df = 7; 516)</td></tr>
 <tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="7" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+</table>
+
+#### Dummy Variable Trap
+
+
+```r
+wage_new <- wage1%>%
+  mutate(male = if_else(female == 1,0,1))
+mod_red <- lm(data = wage_new, lwage ~ female + male)
+stargazer(mod_red,type = "html",dep.var.labels = c("log wage"), title = "Wage and Gender", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+<table style="text-align:center"><caption><strong>Wage and Gender</strong></caption>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>log wage</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">female</td><td>-0.396<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.043)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">male</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>1.814<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.030)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>524</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.138</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.137</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>0.494 (df = 522)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>83.868<sup>***</sup> (df = 1; 522)</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
 

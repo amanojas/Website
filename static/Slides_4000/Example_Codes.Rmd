@@ -433,5 +433,14 @@ mod_7 <- lm(data = wage1, lwage ~ female + educ + exper + tenure + female*educ +
 stargazer(mod_1, mod_2,mod_3,mod_4,mod_5,mod_6,mod_7,type = "html",dep.var.labels = c("log wage"), title = "Wage and Gender", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
+#### Dummy Variable Trap
+
+```{r wage new  Dummy Variables,echo=TRUE, warning=FALSE, message=FALSE, results='asis'}
+wage_new <- wage1%>%
+  mutate(male = if_else(female == 1,0,1))
+mod_red <- lm(data = wage_new, lwage ~ female + male)
+stargazer(mod_red,type = "html",dep.var.labels = c("log wage"), title = "Wage and Gender", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
 
 
