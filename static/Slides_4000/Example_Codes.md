@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-04-10"
+date: "2022-04-11"
 output: 
   html_document: 
     toc: yes
@@ -694,29 +694,98 @@ stargazer(mod_1, mod_2,mod_3,mod_4,mod_5,mod_6,mod_7,type = "html",dep.var.label
 ```r
 wage_new <- wage1%>%
   mutate(male = if_else(female == 1,0,1))
+mod_m <- lm(data = wage_new, lwage ~ male)
+mod_fm <- lm(data = wage_new, lwage ~ female)
 mod_red <- lm(data = wage_new, lwage ~ female + male)
-stargazer(mod_red,type = "html",dep.var.labels = c("log wage"), title = "Wage and Gender", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+stargazer(mod_m,mod_fm,mod_red,type = "html",dep.var.labels = c("log wage"), title = "Wage and Gender", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
 ```
 
 
 <table style="text-align:center"><caption><strong>Wage and Gender</strong></caption>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>log wage</td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">female</td><td>-0.396<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.043)</td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">male</td><td></td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>1.814<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.030)</td></tr>
-<tr><td style="text-align:left"></td><td></td></tr>
-<tr><td style="text-align:left"><em>N</em></td><td>524</td></tr>
-<tr><td style="text-align:left">R<sup>2</sup></td><td>0.138</td></tr>
-<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.137</td></tr>
-<tr><td style="text-align:left">Residual Std. Error</td><td>0.494 (df = 522)</td></tr>
-<tr><td style="text-align:left">F Statistic</td><td>83.868<sup>***</sup> (df = 1; 522)</td></tr>
-<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="3">log wage</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">male</td><td>0.396<sup>***</sup></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.043)</td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">female</td><td></td><td>-0.396<sup>***</sup></td><td>-0.396<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.043)</td><td>(0.043)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>1.418<sup>***</sup></td><td>1.814<sup>***</sup></td><td>1.814<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.031)</td><td>(0.030)</td><td>(0.030)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>524</td><td>524</td><td>524</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.138</td><td>0.138</td><td>0.138</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.137</td><td>0.137</td><td>0.137</td></tr>
+<tr><td style="text-align:left">Residual Std. Error (df = 522)</td><td>0.494</td><td>0.494</td><td>0.494</td></tr>
+<tr><td style="text-align:left">F Statistic (df = 1; 522)</td><td>83.868<sup>***</sup></td><td>83.868<sup>***</sup></td><td>83.868<sup>***</sup></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="3" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
+
+**With Multiple Dummies**
+
+Let us go back to our old example on salaries of CEOs
+
+- salary: 1990 salary, thousands $
+
+- pcsalary: percent change salary, 89-90
+
+- sales: 1990 firm sales, millions $
+
+- roe: return on equity, 88-90 avg
+
+- pcroe: percent change roe, 88-90
+
+- ros: return on firm's stock, 88-90
+
+- indus: =1 if industrial firm
+
+- finance: =1 if financial firm
+
+- consprod: =1 if consumer product firm
+
+- utility: =1 if transport. or utilties
+
+- lsalary: natural log of salary
+
+- lsales: natural log of sales
+
+
+```r
+model_md <- lm(data = ceosal1, salary ~ roe + indus + finance + consprod)
+model_md1 <- lm(data = ceosal1, salary ~ roe + indus + finance + consprod + utility)
+stargazer(model_md, model_md1,type = "html",dep.var.labels   = "Salary", title = "CEO Salary and Return on Equity", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+<table style="text-align:center"><caption><strong>CEO Salary and Return on Equity</strong></caption>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="2">Salary</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">roe</td><td>2.499</td><td>2.499</td></tr>
+<tr><td style="text-align:left"></td><td>(12.397)</td><td>(12.397)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">indus</td><td>396.514</td><td>396.514</td></tr>
+<tr><td style="text-align:left"></td><td>(286.959)</td><td>(286.959)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">finance</td><td>609.637<sup>**</sup></td><td>609.637<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(300.829)</td><td>(300.829)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">consprod</td><td>966.333<sup>***</sup></td><td>966.333<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(315.436)</td><td>(315.436)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">utility</td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>699.470<sup>***</sup></td><td>699.470<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(264.622)</td><td>(264.622)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left"><em>N</em></td><td>209</td><td>209</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.062</td><td>0.062</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.044</td><td>0.044</td></tr>
+<tr><td style="text-align:left">Residual Std. Error (df = 204)</td><td>1,342.054</td><td>1,342.054</td></tr>
+<tr><td style="text-align:left">F Statistic (df = 4; 204)</td><td>3.374<sup>**</sup></td><td>3.374<sup>**</sup></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="2" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
+</table>
+
 
 
 

@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2022-04-10" />
+<meta name="date" content="2022-04-11" />
 
 <title>Example Codes</title>
 
@@ -328,7 +328,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Example Codes</h1>
 <h4 class="author"></h4>
-<h4 class="date">2022-04-10</h4>
+<h4 class="date">2022-04-11</h4>
 
 </div>
 
@@ -3228,25 +3228,73 @@ F Statistic
 <h4>Dummy Variable Trap</h4>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>wage_new <span class="ot">&lt;-</span> wage1<span class="sc">%&gt;%</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">male =</span> <span class="fu">if_else</span>(female <span class="sc">==</span> <span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>))</span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>mod_red <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> wage_new, lwage <span class="sc">~</span> female <span class="sc">+</span> male)</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(mod_red,<span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">dep.var.labels =</span> <span class="fu">c</span>(<span class="st">&quot;log wage&quot;</span>), <span class="at">title =</span> <span class="st">&quot;Wage and Gender&quot;</span>, <span class="at">style =</span> <span class="st">&quot;qje&quot;</span>,<span class="at">notes.append =</span> <span class="cn">FALSE</span>,<span class="at">notes =</span> <span class="fu">c</span>(<span class="st">&quot;&lt;sup&gt;&amp;sstarf;&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.01&quot;</span>))</span></code></pre></div>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>mod_m <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> wage_new, lwage <span class="sc">~</span> male)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>mod_fm <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> wage_new, lwage <span class="sc">~</span> female)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>mod_red <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> wage_new, lwage <span class="sc">~</span> female <span class="sc">+</span> male)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(mod_m,mod_fm,mod_red,<span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">dep.var.labels =</span> <span class="fu">c</span>(<span class="st">&quot;log wage&quot;</span>), <span class="at">title =</span> <span class="st">&quot;Wage and Gender&quot;</span>, <span class="at">style =</span> <span class="st">&quot;qje&quot;</span>,<span class="at">notes.append =</span> <span class="cn">FALSE</span>,<span class="at">notes =</span> <span class="fu">c</span>(<span class="st">&quot;&lt;sup&gt;&amp;sstarf;&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.01&quot;</span>))</span></code></pre></div>
 <table style="text-align:center">
 <caption>
 <strong>Wage and Gender</strong>
 </caption>
 <tr>
-<td colspan="2" style="border-bottom: 1px solid black">
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="3">
+log wage
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
 </td>
 <td>
-log wage
+(1)
+</td>
+<td>
+(2)
+</td>
+<td>
+(3)
 </td>
 </tr>
 <tr>
-<td colspan="2" style="border-bottom: 1px solid black">
+<td colspan="4" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+male
+</td>
+<td>
+0.396<sup>***</sup>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.043)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
 </td>
 </tr>
 <tr>
@@ -3254,11 +3302,21 @@ log wage
 female
 </td>
 <td>
+</td>
+<td>
+-0.396<sup>***</sup>
+</td>
+<td>
 -0.396<sup>***</sup>
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+(0.043)
 </td>
 <td>
 (0.043)
@@ -3269,22 +3327,7 @@ female
 </td>
 <td>
 </td>
-</tr>
-<tr>
-<td style="text-align:left">
-male
-</td>
 <td>
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td style="text-align:left">
 </td>
 <td>
 </td>
@@ -3294,11 +3337,23 @@ male
 Constant
 </td>
 <td>
+1.418<sup>***</sup>
+</td>
+<td>
+1.814<sup>***</sup>
+</td>
+<td>
 1.814<sup>***</sup>
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
+</td>
+<td>
+(0.031)
+</td>
+<td>
+(0.030)
 </td>
 <td>
 (0.030)
@@ -3309,10 +3364,20 @@ Constant
 </td>
 <td>
 </td>
+<td>
+</td>
+<td>
+</td>
 </tr>
 <tr>
 <td style="text-align:left">
 <em>N</em>
+</td>
+<td>
+524
+</td>
+<td>
+524
 </td>
 <td>
 524
@@ -3325,6 +3390,12 @@ R<sup>2</sup>
 <td>
 0.138
 </td>
+<td>
+0.138
+</td>
+<td>
+0.138
+</td>
 </tr>
 <tr>
 <td style="text-align:left">
@@ -3333,32 +3404,336 @@ Adjusted R<sup>2</sup>
 <td>
 0.137
 </td>
-</tr>
-<tr>
-<td style="text-align:left">
-Residual Std. Error
+<td>
+0.137
 </td>
 <td>
-0.494 (df = 522)
+0.137
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
-F Statistic
+Residual Std. Error (df = 522)
 </td>
 <td>
-83.868<sup>***</sup> (df = 1; 522)
+0.494
+</td>
+<td>
+0.494
+</td>
+<td>
+0.494
 </td>
 </tr>
 <tr>
-<td colspan="2" style="border-bottom: 1px solid black">
+<td style="text-align:left">
+F Statistic (df = 1; 522)
+</td>
+<td>
+83.868<sup>***</sup>
+</td>
+<td>
+83.868<sup>***</sup>
+</td>
+<td>
+83.868<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td colspan="4" style="border-bottom: 1px solid black">
 </td>
 </tr>
 <tr>
 <td style="text-align:left">
 <em>Notes:</em>
 </td>
-<td style="text-align:right">
+<td colspan="3" style="text-align:right">
+<sup>⋆</sup>p&lt;0.1; <sup>⋆⋆</sup>p&lt;0.05; <sup>⋆⋆⋆</sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><strong>With Multiple Dummies</strong></p>
+<p>Let us go back to our old example on salaries of CEOs</p>
+<ul>
+<li><p>salary: 1990 salary, thousands $</p></li>
+<li><p>pcsalary: percent change salary, 89-90</p></li>
+<li><p>sales: 1990 firm sales, millions $</p></li>
+<li><p>roe: return on equity, 88-90 avg</p></li>
+<li><p>pcroe: percent change roe, 88-90</p></li>
+<li><p>ros: return on firm’s stock, 88-90</p></li>
+<li><p>indus: =1 if industrial firm</p></li>
+<li><p>finance: =1 if financial firm</p></li>
+<li><p>consprod: =1 if consumer product firm</p></li>
+<li><p>utility: =1 if transport. or utilties</p></li>
+<li><p>lsalary: natural log of salary</p></li>
+<li><p>lsales: natural log of sales</p></li>
+</ul>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>model_md <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> ceosal1, salary <span class="sc">~</span> roe <span class="sc">+</span> indus <span class="sc">+</span> finance <span class="sc">+</span> consprod)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>model_md1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">data =</span> ceosal1, salary <span class="sc">~</span> roe <span class="sc">+</span> indus <span class="sc">+</span> finance <span class="sc">+</span> consprod <span class="sc">+</span> utility)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fu">stargazer</span>(model_md, model_md1,<span class="at">type =</span> <span class="st">&quot;html&quot;</span>,<span class="at">dep.var.labels   =</span> <span class="st">&quot;Salary&quot;</span>, <span class="at">title =</span> <span class="st">&quot;CEO Salary and Return on Equity&quot;</span>, <span class="at">style =</span> <span class="st">&quot;qje&quot;</span>,<span class="at">notes.append =</span> <span class="cn">FALSE</span>,<span class="at">notes =</span> <span class="fu">c</span>(<span class="st">&quot;&lt;sup&gt;&amp;sstarf;&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;&amp;sstarf;&amp;sstarf;&amp;sstarf;&lt;/sup&gt;p&lt;0.01&quot;</span>))</span></code></pre></div>
+<table style="text-align:center">
+<caption>
+<strong>CEO Salary and Return on Equity</strong>
+</caption>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Salary
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+roe
+</td>
+<td>
+2.499
+</td>
+<td>
+2.499
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(12.397)
+</td>
+<td>
+(12.397)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+indus
+</td>
+<td>
+396.514
+</td>
+<td>
+396.514
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(286.959)
+</td>
+<td>
+(286.959)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+finance
+</td>
+<td>
+609.637<sup>**</sup>
+</td>
+<td>
+609.637<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(300.829)
+</td>
+<td>
+(300.829)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+consprod
+</td>
+<td>
+966.333<sup>***</sup>
+</td>
+<td>
+966.333<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(315.436)
+</td>
+<td>
+(315.436)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+utility
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+699.470<sup>***</sup>
+</td>
+<td>
+699.470<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(264.622)
+</td>
+<td>
+(264.622)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>N</em>
+</td>
+<td>
+209
+</td>
+<td>
+209
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.062
+</td>
+<td>
+0.062
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.044
+</td>
+<td>
+0.044
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error (df = 204)
+</td>
+<td>
+1,342.054
+</td>
+<td>
+1,342.054
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic (df = 4; 204)
+</td>
+<td>
+3.374<sup>**</sup>
+</td>
+<td>
+3.374<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Notes:</em>
+</td>
+<td colspan="2" style="text-align:right">
 <sup>⋆</sup>p&lt;0.1; <sup>⋆⋆</sup>p&lt;0.05; <sup>⋆⋆⋆</sup>p&lt;0.01
 </td>
 </tr>
