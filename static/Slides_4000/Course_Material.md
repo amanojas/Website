@@ -1,7 +1,7 @@
 ---
-title: "Course Material"
+title: "Course Topics"
 subtitle: "Spring 2022"
-date: "2022-01-30"
+date: "2022-04-10"
 output: 
   html_document: 
     toc: yes
@@ -26,10 +26,6 @@ You may find [this pdf](\Slides_4000\R.pdf) useful to get started with R.
 
 - Probability and Statistics
 
-  + [Part 1]()
-  
-  + [Part 2]()
-
 ## The Simple Regression Model
 
 - Definition of the Simple Regression Model
@@ -42,7 +38,7 @@ You may find [this pdf](\Slides_4000\R.pdf) useful to get started with R.
 
 - Algebraic properties of OLS statistics
 
-- Goodness-of-fit
+- Goodness-of-fit 
 
 - Units of Measurement and Functional Form
 
@@ -109,3 +105,7 @@ You may find [this pdf](\Slides_4000\R.pdf) useful to get started with R.
 - Interactions involving dummy variables
 
 - A binary dependent variable: the linear probability model
+
+
+    
+    
