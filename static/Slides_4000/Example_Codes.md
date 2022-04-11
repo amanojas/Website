@@ -37,7 +37,7 @@ table, td, th {
  
 
 ```r
-packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign","wooldridge") ## This is how you define an object (which is a vector here)
+packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign","wooldridge","moderndive") ## This is how you define an object (which is a vector here)
 install.packages(packages, repos='http://cran.us.r-project.org') # Installing packages at once
 lapply(packages, library, character.only = T) # Loading the packages
 ```
@@ -688,7 +688,22 @@ stargazer(mod_1, mod_2,mod_3,mod_4,mod_5,mod_6,mod_7,type = "html",dep.var.label
 <tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Notes:</em></td><td colspan="7" style="text-align:right"><sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01</td></tr>
 </table>
 
-#### Dummy Variable Trap
+
+### Parallel Slopes Model
+
+
+```r
+wage_new <- wage1 %>%
+  mutate(Gender = if_else(female == 1,"female","male"))
+ggplot(data = wage_new, aes(x = educ, y = lwage, color = Gender)) +
+  geom_point()+
+  geom_parallel_slopes(se = FALSE)
+```
+
+![](Example_Codes_files/figure-html/wage1 parallel slopes-1.png)<!-- -->
+
+
+### Dummy Variable Trap
 
 
 ```r
