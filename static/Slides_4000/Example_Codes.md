@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-04-11"
+date: "2022-04-22"
 output: 
   html_document: 
     toc: yes
@@ -37,7 +37,7 @@ table, td, th {
  
 
 ```r
-packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign","wooldridge","moderndive") ## This is how you define an object (which is a vector here)
+packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign","wooldridge","moderndive","gridExtra","haven","CARS") ## This is how you define an object (which is a vector here)
 install.packages(packages, repos='http://cran.us.r-project.org') # Installing packages at once
 lapply(packages, library, character.only = T) # Loading the packages
 ```
@@ -56,7 +56,7 @@ bwsmoking_csv<- read_csv("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweigh
 
 ## Read a STATA file (will require package named "foreign")
 
-bwsmoking_stata <- read.dta("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\birthweight_smoking.dta")
+bwsmoking_stata <- read_dta("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\birthweight_smoking.dta")
 
 ## Read an RDS file 
 
