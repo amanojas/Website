@@ -1,7 +1,7 @@
 ---
 title: "Example Codes"
 author: ""
-date: "2022-04-22"
+date: "2022-04-23"
 output: 
   html_document: 
     toc: yes
@@ -37,7 +37,7 @@ table, td, th {
  
 
 ```r
-packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign","wooldridge","moderndive","gridExtra","haven","CARS") ## This is how you define an object (which is a vector here)
+packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign","wooldridge","moderndive","gridExtra","haven","car") ## This is how you define an object (which is a vector here)
 install.packages(packages, repos='http://cran.us.r-project.org') # Installing packages at once
 lapply(packages, library, character.only = T) # Loading the packages
 ```
