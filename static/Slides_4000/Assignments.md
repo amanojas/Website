@@ -40,4 +40,4 @@ output:
 
 ## Computer Assignment
 
-
+- [Computer Assignment](\Slides_4000\Individual Computer Assignment.pdf) (Due on May 4, 2022 before class)
