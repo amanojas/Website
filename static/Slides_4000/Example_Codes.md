@@ -52,9 +52,9 @@ bwsmoking_excel <- read_xlsx("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthw
 
 ## Read a csv file
 
-bwsmoking_csv<- read_csv("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\bwsmoking.csv")
+bwsmoking_csv <- read_csv("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\bwsmoking.csv")
 
-## Read a STATA file (will require package named "foreign")
+## Read a STATA file (will require package named "haven")
 
 bwsmoking_stata <- read_dta("S:\\Baruch\\ECO 4000\\Spring2022\\Datasets\\Birthweight and Smoking\\birthweight_smoking.dta")
 
