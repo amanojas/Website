@@ -54,7 +54,7 @@ Kindly let me know topic of your choice for an essay by **February 14th,2022** v
 ## Opinion Writing 
 
 
-Here are the [links](\Slides_1110\Articles_Spring2022.docx) to the articles for your opinion writing exercise.\
+Here are the [links](\Slides_1110\Articles_Spring2022.docx) to the articles for your opinion writing exercise. You are expected to write your opinions on two topics. I have assigned two articles on each topic with two opposite views. Knowing both sides of the issue will help you think critically and form better arguments. You must form your opinion based on economic arguments as the purpose of this exercise is to use the tools we learned in this course and apply them while thinking about real world issues. \
 
 
 Following are the questions you should be addressing in your opinion writings.
