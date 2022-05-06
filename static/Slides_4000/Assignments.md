@@ -41,3 +41,8 @@ output:
 ## Computer Assignment
 
 - [Computer Assignment](\Slides_4000\Individual Computer Assignment.pdf) (Due on May 4, 2022 before class)
+
+## Final Group Project
+
+- [Group Assignment](\Slides_4000\Group_Project_Questions.pdf) (Due on May 18, 2022 before final exam)
+

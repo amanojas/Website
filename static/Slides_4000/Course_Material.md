@@ -1,7 +1,7 @@
 ---
 title: "Course Topics"
 subtitle: "Spring 2022"
-date: "2022-04-10"
+date: "2022-05-06"
 output: 
   html_document: 
     toc: yes
@@ -104,7 +104,7 @@ You may find [this pdf](\Slides_4000\R.pdf) useful to get started with R.
 
 - Interactions involving dummy variables
 
-- A binary dependent variable: the linear probability model
+
 
 
     

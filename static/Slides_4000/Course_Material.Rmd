@@ -106,7 +106,7 @@ You may find [this pdf](\Slides_4000\R.pdf) useful to get started with R.
 
 - Interactions involving dummy variables
 
-- A binary dependent variable: the linear probability model
+
 
 
     
