@@ -32,7 +32,7 @@ output:
 - Reporting with R Markdown
 
 
-## Class Assignments
+## Written Assignment
 
 - [Written Assignment](\Slides_4000\Written_Assignment_Spring_2022.pdf) (Due on April 13, 2022 before class)
 
@@ -41,6 +41,8 @@ output:
 ## Computer Assignment
 
 - [Computer Assignment](\Slides_4000\Individual Computer Assignment.pdf) (Due on May 4, 2022 before class)
+
+- [Answers](\Slides_4000\Computer-Assignment.html)
 
 ## Final Group Project
 
