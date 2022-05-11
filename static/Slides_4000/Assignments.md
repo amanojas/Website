@@ -46,7 +46,7 @@ output:
 
 - [R Markdown File](\Slides_4000\Computer Assignment.Rmd) 
 
-- [Zoom Video Link](https://gc-cuny-edu.zoom.us/rec/share/AtdmKIdr0L5fG6mzyp0WDOULSKIRb8NDm4LEURJBUxQ_kwW6btqPDJCm26oHeRiF.l7YxWZKeW0ralWLJ?startTime=1652237278000)
+- [Zoom Video Link](https://gc-cuny-edu.zoom.us/rec/share/SqKNgSwh4IOt0sC3aqF-6lAPRwGkLwycmtDjA9dejPUQwGyqrpkL_qaY4vef0kcV.1xQjC3R2O7n9ASer?startTime=1652237278000)
 
 ## Final Group Project
 
