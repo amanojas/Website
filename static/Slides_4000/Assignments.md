@@ -44,6 +44,10 @@ output:
 
 - [Answers](\Slides_4000\Computer-Assignment.html)
 
+- [R Markdown File](\Slides_4000\Computer Assignment.Rmd) 
+
+- [Zoom Video Link](https://gc-cuny-edu.zoom.us/rec/share/AtdmKIdr0L5fG6mzyp0WDOULSKIRb8NDm4LEURJBUxQ_kwW6btqPDJCm26oHeRiF.l7YxWZKeW0ralWLJ?startTime=1652237278000)
+
 ## Final Group Project
 
 - [Group Assignment](\Slides_4000\Group_Project_Questions.pdf) (Due on May 18, 2022 before final exam)

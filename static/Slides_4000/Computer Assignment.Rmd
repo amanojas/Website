@@ -1,0 +1,119 @@
+---
+title: "Computer Assignment"
+author: "ECO 4000 Statistical Analysis for Economics and Finance"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document: 
+    toc: yes
+    toc_float: yes
+    theme: flatly
+    keep_md: yes
+---
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r packages,include= FALSE, message=FALSE, warning=FALSE,results='hide'}
+packages <- c("tidyverse","stargazer","AER","asbio","tigerstats","readxl","foreign","wooldridge","gridExtra","haven","CARS") ## This is how you define an object (which is a vector here)
+install.packages(packages, repos='http://cran.us.r-project.org') # Installing packages at once
+lapply(packages, library, character.only = T) # Loading the packages
+```
+
+
+![Data Description](DataDescription.PNG)
+
+### Part 1 Preliminary Data Analysis
+
+#### Reading the Data File
+
+```{r readingthedata,include= TRUE, message=FALSE, warning=FALSE}
+### Loading the data
+terror_data <- read_dta("S:\\Baruch\\ECO 4000\\Spring2022\\Practice Problems\\Computer_Assignment\\terrorism.dta")
+```
+
+
+#### Data Preparation
+
+```{r data preparation,include= TRUE, message=FALSE, warning=FALSE}
+terror_data<- terror_data%>%
+  filter(!is.na(gdppc) & ftmpop > 0 ) ## Preparing the sample for analysis
+
+terror_data_new = terror_data %>%
+  mutate(lnftmpop = log(ftmpop), lngdppc = log(gdppc)) ## Creating new variables
+```
+
+
+#### Plotting the data using ggplot2
+
+
+```{r scatter plots, include= TRUE, message=FALSE, warning=FALSE}
+p1 <- ggplot(terror_data_new, aes(x = gdppc, y = ftmpop))+
+  geom_point()+
+  xlab("GDP per Capita")+
+  ylab("Fatalities from Terrorism")
+  
+p2 <- ggplot(terror_data_new, aes(x = lngdppc, y = lnftmpop))+
+  geom_point()+
+  xlab("GDP per Capita")+
+  ylab("Fatalities from Terrorism")
+
+gridExtra::grid.arrange(p1,p2, ncol = 1)
+```
+
+
+```{r part c, include=TRUE, message=FALSE, warning=FALSE}
+p3 <-ggplot(terror_data_new, aes(x = lackpf, y = lnftmpop))+
+  geom_point()+
+  xlab("Index of Lack of Political Freedom")+
+  ylab("Fatalities from Terrorism")
+p3
+```
+
+d. The relation in the *ftmpop* – *gdppc* scatterplot looks highly nonlinear, like a hyperbola but with a couple of outliers. Taking logs of both variables makes the hyperbolic-type relation look much more like a scatter with a (weak) linear relation, the sort of thing that can be well handled by conventional multiple linear regression methods.
+
+### Part 2 Regression Results
+
+```{r regression results,include= TRUE, message=FALSE, warning=FALSE, results='asis'}
+terror_data_new = terror_data_new%>%
+  mutate(lngdppc2 = (lngdppc)^2, lackpf2 = (lackpf)^2) ## Creating required variables
+
+model_1 <- lm(data = terror_data_new, lnftmpop ~ lngdppc)
+model_2 <- lm(data = terror_data_new, lnftmpop ~ lngdppc + lackpf)
+model_3 <- lm(data = terror_data_new, lnftmpop ~ lngdppc + lngdppc2 + lackpf + lackpf2)
+model_4 <- lm(data = terror_data_new, lnftmpop ~ lngdppc + lackpf + lackpf2 + ethnic + religion)
+model_5 <- lm(data = terror_data_new, lnftmpop ~ lngdppc + lackpf + lackpf2 + ethnic + religion + mideast + latinam + easteurope + eastasia + africa)
+stargazer(model_1, model_2,model_3,model_4,model_5,type = "html",dep.var.labels   = "Fatalities from Terrorism per Population", title = "Determinants of Terrorism", style = "qje",notes.append = FALSE,notes = c("<sup>&sstarf;</sup>p<0.1; <sup>&sstarf;&sstarf;</sup>p<0.05; <sup>&sstarf;&sstarf;&sstarf;</sup>p<0.01"))
+```
+
+
+### Part 3 Hypothesis Testing and Result Interpretation
+
+
+a. $$H_{0} : \beta_{lngdppc} = 0$$ 
+$$H_{1} : \beta_{lngdppc} \neq 0$$ 
+    
+
+$t = -2.21$. Hence,so $|t_{calculated}| > |t_{critical}|$,$|-2.21| > |1.96|$. The hypothesis is rejected at the 5 % significance level. The estimated coefficient, $-.312$, means that a 1 % increase in GDP per capita is associated with a 0.312 % decrease in terrorist fatalities.
+
+b. F = 0.096 with p-value = 0.9086. So, the hypothesis that both coefficients are zero (holding constant lackpf and lackpf2) is not rejected at the 5% (or 10%) significance level.
+```{r Ftest_1,include= TRUE, message=FALSE, warning=FALSE}
+linearHypothesis(model_3, c("lngdppc = 0","lngdppc2 = 0")) ## Homoskedastic Errors
+linearHypothesis(model_3, c("lngdppc = 0","lngdppc2 = 0"),white.adjust = "hc1") ## heteroskedasticity robust standard errors
+```
+
+c. The results in **(a)** do not control for *lackpf*, whereas the results in **(b)** do (they control for a quadratic in lackpf). The explanation is straight OV bias – in **(a)**, lngdppc is picking up the effect of *lackpf*, with which it is correlated, and which is a determinant of *lnftmpop*.
+
+
+d. F = 0.6576 with p-value = 0.0.6237, so the hypothesis is not rejected at the 5% (or 10%) significance level. The number of restrictions is the number of coefficients that are zero under the null, here q = 4 (coefficients on latinam, easteurope, africa, eastasia). The 5% critical value of the $F_{4,\infty}$ distribution is 2.37.
+```{r Ftest_2,include= TRUE, message=FALSE, warning=FALSE}
+linearHypothesis(model_5, c("latinam = 0","easteurope = 0","eastasia = 0","africa = 0")) ## Homoskedastic Errors
+linearHypothesis(model_5, c("latinam = 0","easteurope = 0","eastasia = 0","africa = 0"),white.adjust = "hc1") ## heteroskedasticity robust standard errors
+```
+
