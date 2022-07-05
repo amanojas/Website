@@ -32,6 +32,8 @@ output:
 - Reporting with R Markdown
 
 
+<!--
+
 ## Written Assignment
 
 - [Written Assignment](\Slides_4000\Written_Assignment_Spring_2022.pdf) (Due on April 13, 2022 before class)
@@ -48,3 +50,4 @@ output:
 
 - [Group Assignment](\Slides_4000\Group_Project_Questions.pdf) (Due on May 18, 2022 before final exam)
 
+-->
