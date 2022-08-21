@@ -1,7 +1,7 @@
 ---
 title: "Course Topics"
-subtitle: "Spring 2022"
-date: "2022-05-06"
+subtitle: "Fall 2022"
+date: "2022-08-21"
 output: 
   html_document: 
     toc: yes

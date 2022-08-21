@@ -1,6 +1,6 @@
 ---
 title: "Required Coursework"
-subtitle: "Spring 2022"
+subtitle: "Fall 2022"
 output: 
   html_document: 
     toc: yes
