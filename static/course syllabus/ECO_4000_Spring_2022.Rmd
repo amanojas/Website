@@ -59,6 +59,7 @@ We will use this site as well as the Blackboard for our purposes in this course.
 - [Introduction to Econometrics, 4th Edition (Pearson), by James Stock and Mark Watson. (SW)](https://www.pearson.com/us/higher-education/program/Stock-Introduction-to-Econometrics-Plus-My-Lab-Economics-with-Pearson-e-Text-Access-Card-Package-4th-Edition/PGM2416966.html)\
 - [Introductory Econometrics: A Modern Approach, 6th Edition (Cengage), by Jeffery M. Wooldridge (W)](https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/9781305270107/)\
 - [Basic Econometrics, 5th Edition, by Damodar N Gujarati and Dawn C. Porter (GP)](https://www.amazon.com/Basic-Econometrics-Damodar-N-Gujarati/dp/0073375772)\
+- [Introduction to Econometrics, 5th Edition (Oxford University Press), by Christopher Dougherty (CD)](https://www.amazon.com/Introduction-Econometrics-Christopher-Dougherty/dp/0199676828)\
 
 
 **Open Access**
