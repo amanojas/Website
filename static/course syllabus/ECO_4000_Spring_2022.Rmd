@@ -72,16 +72,16 @@ We will use this site as well as the Blackboard for our purposes in this course.
 ## Important Dates 
 (For the latest updates please follow: https://www.baruch.cuny.edu/registrar/registration/academic-calendar.html) \
 **No Classes on Following Days**\
-February- 21st (Monday)\
-April – 15th to 22nd (Spring Recess)\
+September - 5,26 (Mo) [29 - classes follow Monday schedule] \
+October- 5 (We), 10 (Mo)\
 Final Exam – As per Baruch College’s Schedule
 
 ## Grading Policy
 
 ### Course Evaluation Scheme
 
-**DataCamp Exercises**	-	30%\
-**Assignments** - 20%\
+**DataCamp Exercises**	-	20%\
+**Assignments** - 30%\
 **Written Exam** 		-	30%\
 **Final Group Project**  - 20%\
 
