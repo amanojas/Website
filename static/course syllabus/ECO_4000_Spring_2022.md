@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
-subtitle: "Spring 2022"
-date: "2022-03-09"
+subtitle: "Fall 2022"
+date: "2022-08-21"
 output: 
   html_document: 
     toc: yes
@@ -20,9 +20,9 @@ output:
 ## Instructor Information 
 **Name** : Aman Ojas Desai\
 **Email** : adesai@gradcenter.cuny.edu\
-**Class Schedule** : MoWe 9:05 AM-10:20AM (In-Person)\
-**Room** : B - Vert 5-160\
-**Office Hours**: MoWe 10:30 AM - 11:30 AM (B-Vert 10-260)
+**Class Schedule** : MoWe 10:45AM - 12:00PM (In-Person)\
+**Room** : B - Vert 11-150\
+**Office Hours**: MoWe 9:30 AM - 10:30 AM (B-Vert 10-260)
 
 
 ## Course Description
@@ -59,6 +59,7 @@ We will use this site as well as the Blackboard for our purposes in this course.
 - [Basic Econometrics, 5th Edition, by Damodar N Gujarati and Dawn C. Porter (GP)](https://www.amazon.com/Basic-Econometrics-Damodar-N-Gujarati/dp/0073375772)\
 - [Introduction to Econometrics, 5th Edition (Oxford University Press), by Christopher Dougherty (CD)](https://www.amazon.com/Introduction-Econometrics-Christopher-Dougherty/dp/0199676828)\
 
+
 **Open Access**
 
 - [Introduction to Econometrics with R](https://www.econometrics-with-r.org/) 
@@ -70,16 +71,16 @@ We will use this site as well as the Blackboard for our purposes in this course.
 ## Important Dates 
 (For the latest updates please follow: https://www.baruch.cuny.edu/registrar/registration/academic-calendar.html) \
 **No Classes on Following Days**\
-February- 21st (Monday)\
-April – 15th to 22nd (Spring Recess)\
+September - 5,26 (Mo) [29 - classes follow Monday schedule] \
+October- 5 (We), 10 (Mo)\
 Final Exam – As per Baruch College’s Schedule
 
 ## Grading Policy
 
 ### Course Evaluation Scheme
 
-**DataCamp Exercises**	-	30%\
-**Assignments** - 20%\
+**DataCamp Exercises**	-	20%\
+**Assignments** - 30%\
 **Written Exam** 		-	30%\
 **Final Group Project**  - 20%\
 
