@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
-subtitle: "Fall 2022"
-date: "2022-08-21"
+subtitle: "Spring 2023"
+date: "2023-01-20"
 output: 
   html_document: 
     toc: yes
