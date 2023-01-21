@@ -25,7 +25,7 @@ links:
   icon_pack: fab
   name: Example Codes
   url: "/Slides_4000/Example_Codes.html"
-subtitle: Fall 2022
+subtitle: Spring 2023
 # tags:
 # - hugo-site
 title: ECO 4000 Statistical Analysis for Economics and Finance
