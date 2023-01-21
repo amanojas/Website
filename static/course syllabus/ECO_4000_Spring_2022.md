@@ -1,7 +1,7 @@
 ---
 title: "ECO 4000 Statistical Analysis for Economics and Finance"
 subtitle: "Spring 2023"
-date: "2023-01-20"
+date: "2023-01-21"
 output: 
   html_document: 
     toc: yes
@@ -22,7 +22,7 @@ output:
 **Email** : adesai@gradcenter.cuny.edu\
 **Class Schedule** : MoWe 10:45AM - 12:00PM (In-Person)\
 **Room** : B - Vert 11-150\
-**Office Hours**: MoWe 9:30 AM - 10:30 AM (B-Vert 10-260)
+**Office Hours**: MoWe 9:30 AM - 10:30 AM (B-Vert 10-260 A)
 
 
 ## Course Description
@@ -71,8 +71,8 @@ We will use this site as well as the Blackboard for our purposes in this course.
 ## Important Dates 
 (For the latest updates please follow: https://www.baruch.cuny.edu/registrar/registration/academic-calendar.html) \
 **No Classes on Following Days**\
-September - 5,26 (Mo) [29 - classes follow Monday schedule] \
-October- 5 (We), 10 (Mo)\
+February - 13,20 (Mo) [21 (Tue) classes follow Monday schedule] \
+April - 5-13 Spring Recess \
 Final Exam – As per Baruch College’s Schedule
 
 ## Grading Policy
